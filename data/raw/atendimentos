@@ -1,0 +1,51 @@
+id_atendimento	id_paciente	data_atendimento	tipo_atendimento	medico_responsavel	duracao_minutos	sala	resultado	observacoes
+1001	8	08/11/2025	Quimioterapia	Dra. Morgana Luz	120	Sala 7		
+1002	16	30/09/25	Consulta	Dr. Alisson Vega	120	Sala 7	Melhora	
+1003	42	25/12/25	Exame	Dra. Soraia Melo	60	Sala 5	Estável	
+1004	25	05/12/25	Consulta	Dr. Benício Vale	-5	Sala 1	Estável	
+1005	48	27-07-25	Quimioterapia	Dra. Morgana Luz	-5	Sala 3	Melhora	Check-up rotina
+1006	11	23-04-26	Radioterapia	Dr. Alisson Vega	120	Sala 3	Piora	
+1007	23	2026-03-22	Radioterapia	Dr. Alisson Vega	60	Sala 9	Melhora	
+1008	38	03/05/25	Consulta	Dr. Benício Vale	60	Sala 6	Melhora	Check-up rotina
+1009	19	04/06/2025	Quimioterapia	Dr. Benício Vale	15	Sala 4	Piora	Check-up rotina
+1010	32	04-03-25	Quimioterapia	Dr. Alisson Vega	15	Sala 7	Piora	
+1011	40	03/10/2025	Consulta	Dr. Alisson Vega		Sala 8		Check-up rotina
+1012	11	2025-03-27	Consulta	Dr. Alisson Vega	60	Sala 3	Piora	
+1013	34	08-08-25	Consulta	Dr. Alisson Vega	45	Sala 4	Melhora	
+1014	28	15-08-25	Quimioterapia	Dr. Alisson Vega	30	Sala 2	Estável	
+1015	32	30-01-26	Exame	Dr. Benício Vale	45	Sala 7	Piora	
+1016	40	29/07/2025	Radioterapia	Dr. Alisson Vega	120	Sala 3	Estável	Check-up rotina
+1017	48	18/01/2025	Radioterapia	Dra. Morgana Luz		Sala 8	Piora	
+1018	11	02-05-25	Exame	Dra. Morgana Luz	15	Sala 9		Check-up rotina
+1019	2	02-06-25	Exame	Dra. Soraia Melo	-5	Sala 4	Melhora	
+1020	15	2025-07-14	Quimioterapia	Dr. Benício Vale	-5	Sala 7	Estável	
+1021	50	22/05/25	Radioterapia	Dra. Morgana Luz	15	Sala 4	Estável	
+1022	41	12/06/2025	Quimioterapia	Dr. Benício Vale	120	Sala 3	Estável	
+1023	3	26/10/25	Quimioterapia	Dr. Benício Vale	30	Sala 5		Check-up rotina
+1024	18	2025-10-17	Consulta	Dr. Benício Vale		Sala 5		
+1025	10	21/06/25	Exame	Dra. Soraia Melo	60	Sala 5	Piora	Check-up rotina
+1026	45	11-09-25	Consulta	Dra. Soraia Melo		Sala 5	Melhora	
+1027	49	23/01/26	Radioterapia	Dr. Alisson Vega	30	Sala 9	Piora	Check-up rotina
+1028	21	2025-05-07	Exame	Dr. Cassiano Faria	-5	Sala 6	Melhora	Check-up rotina
+1029	43	24-01-26	Exame	Dr. Benício Vale	120	Sala 3	Piora	Check-up rotina
+1030	19	25-08-25	Radioterapia	Dr. Cassiano Faria	45	Sala 4	Estável	
+1031	21	2026-04-22	Radioterapia	Dr. Alisson Vega	15	Sala 10	Estável	Check-up rotina
+1032	16	26-08-25	Quimioterapia	Dra. Soraia Melo	120	Sala 8	Melhora	
+1033	49	15/09/2025	Quimioterapia	Dr. Benício Vale	30	Sala 10		
+1034	43	13/03/2026	Radioterapia	Dr. Alisson Vega		Sala 8		
+1035	21	22-01-25	Quimioterapia	Dr. Alisson Vega	-5	Sala 3	Estável	Check-up rotina
+1036	13	26/02/25	Quimioterapia	Dra. Morgana Luz	45	Sala 7	Estável	
+1037	19	2025-04-28	Radioterapia	Dr. Benício Vale	45	Sala 3		
+1038	31	2025-09-16	Exame	Dr. Alisson Vega	15	Sala 4	Melhora	Check-up rotina
+1039	25	11-05-25	Quimioterapia	Dr. Benício Vale		Sala 7		
+1040	50	14-01-25	Radioterapia	Dr. Cassiano Faria	30	Sala 2		
+1041	35	31-01-26	Consulta	Dra. Soraia Melo	60	Sala 9	Melhora	
+1042	14	05/04/25	Exame	Dr. Benício Vale	-5	Sala 7		
+1043	21	25/03/2026	Consulta	Dr. Cassiano Faria		Sala 7		Check-up rotina
+1044	22	2025-04-23	Quimioterapia	Dr. Benício Vale	15	Sala 1	Piora	
+1045	48	02/07/2025	Radioterapia	Dr. Benício Vale	60	Sala 7	Estável	Check-up rotina
+1046	43	26/02/2026	Radioterapia	Dr. Cassiano Faria	30	Sala 9		
+1047	13	2025-11-23	Exame	Dra. Soraia Melo		Sala 5	Estável	
+1048	45	02-05-25	Quimioterapia	Dr. Cassiano Faria	120	Sala 10	Estável	
+1049	18	03-03-26	Quimioterapia	Dr. Benício Vale	120	Sala 1		
+1050	43	2025-03-07	Consulta	Dr. Alisson Vega	-5	Sala 5	Piora	
