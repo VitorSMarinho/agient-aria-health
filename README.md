@@ -9,29 +9,37 @@
 
 ---
 
-🎯 Sobre o Projeto
-O Projeto ARIA é uma solução de inteligência de dados desenvolvida pela Agient para transformar a operação de centros oncológicos brasileiros.
+## 🎯 Sobre o Projeto
+
+O **Projeto ARIA** é uma solução de inteligência de dados desenvolvida pela **Agient** para transformar a operação de centros oncológicos brasileiros.
+
 A maioria dos hospitais e clínicas no Brasil possui dados valiosos espalhados em planilhas, sistemas legados e arquivos isolados — sem estrutura, sem governança e sem inteligência. O resultado: decisões lentas, desperdício de recursos, atendimento comprometido.
+
 O ARIA resolve isso. Com uma arquitetura moderna de dados combinada a agentes de IA, transformamos dados brutos em inteligência clínica e operacional — auditável, escalável e acessível para todos os times.
 
-🏥 Contexto — Cliente Fictício
-Instituto Oncológico — centro oncológico de médio porte com 3 unidades, 80 médicos e mais de 500 atendimentos/dia.
-Desafios identificados:
+---
 
-Dados de pacientes, estoque e financeiro em silos isolados
-Sem visibilidade de indicadores em tempo real
-Dificuldade em auditar processos e decisões clínicas
-Time médico sem acesso rápido a análises e literatura atualizada
+## 🏥 Contexto — Cliente Fictício
 
-O que o ARIA entrega:
+**Instituto Oncológico** — centro oncológico de médio porte com 3 unidades, 80 médicos e mais de 500 atendimentos/dia.
 
-Organização e governança de todos os dados da instituição
-Melhoria de performance de entrega médica e atendimento
-Controle inteligente de estoque e financeiro
-Estratégias baseadas em dados para evolução contínua
+**Desafios identificados:**
+- Dados de pacientes, estoque e financeiro em silos isolados
+- Sem visibilidade de indicadores em tempo real
+- Dificuldade em auditar processos e decisões clínicas
+- Time médico sem acesso rápido a análises e literatura atualizada
 
+**O que o ARIA entrega:**
+- Organização e governança de todos os dados da instituição
+- Melhoria de performance de entrega médica e atendimento
+- Controle inteligente de estoque e financeiro
+- Estratégias baseadas em dados para evolução contínua
 
-🏗️ Arquitetura da Solução
+---
+
+## 🏗️ Arquitetura da Solução
+
+```
 📁 Fontes de Dados (CSV)
     pacientes.csv · atendimentos.csv · estoque.csv · financeiro.csv
             │
@@ -52,84 +60,98 @@ Estratégias baseadas em dados para evolução contínua
 🗄️ SUPABASE — Camada de Disponibilização
     ├── Time de Data Viz     → Dashboards e painéis gerenciais
     └── Time de Negócios     → Decisões estratégicas auditáveis
+```
 
-🤖 Agentes ARIA — Skills e Controle de Acesso
+---
+
+## 🤖 Agentes ARIA — Skills e Controle de Acesso
+
 O ARIA é composto por 5 agentes especializados. Cada um possui skills específicas e níveis de acesso controlados por perfil de usuário.
 
-🩺 Agente Clínico de Quadro do Paciente
+---
 
-🔒 Acesso restrito: Médicos autorizados
+### 🩺 Agente Clínico de Quadro do Paciente
+> 🔒 **Acesso restrito: Médicos autorizados**
 
 O agente mais sensível do sistema. Analisa o quadro clínico completo do paciente e auxilia o médico na tomada de decisão — sem substituir o julgamento clínico.
-Skills:
 
-Resumo do histórico completo de atendimentos do paciente
-Análise de evolução do quadro clínico por estadiamento
-Identificação de padrões de melhora ou piora
-Pontos de atenção e alertas clínicos
-Geração de relatório estruturado por consulta
-Disclaimer automático: "Este relatório é um suporte à decisão médica e não substitui o julgamento clínico do profissional responsável."
+**Skills:**
+- Resumo do histórico completo de atendimentos do paciente
+- Análise de evolução do quadro clínico por estadiamento
+- Identificação de padrões de melhora ou piora
+- Pontos de atenção e alertas clínicos
+- Geração de relatório estruturado por consulta
+- Disclaimer automático: *"Este relatório é um suporte à decisão médica e não substitui o julgamento clínico do profissional responsável."*
 
+---
 
-📊 Agente de Indicadores de Atendimento
+### 📊 Agente de Indicadores de Atendimento
+> 👥 **Acesso: Gestores e equipe administrativa**
 
-👥 Acesso: Gestores e equipe administrativa
+**Skills:**
+- Análise de volume de atendimentos por período e unidade
+- Identificação de gargalos e tempos de espera
+- Performance por médico e especialidade
+- Alertas de metas não atingidas
+- Sugestões de melhoria operacional
 
-Skills:
+---
 
-Análise de volume de atendimentos por período e unidade
-Identificação de gargalos e tempos de espera
-Performance por médico e especialidade
-Alertas de metas não atingidas
-Sugestões de melhoria operacional
+### 💰 Agente Financeiro
+> 👥 **Acesso: Diretoria e financeiro**
 
+**Skills:**
+- Monitoramento de receitas e despesas em tempo real
+- Detecção de anomalias e duplicidades financeiras
+- Análise de inadimplência por convênio
+- Projeções e tendências financeiras
+- Alertas de pagamentos em atraso
 
-💰 Agente Financeiro
+---
 
-👥 Acesso: Diretoria e financeiro
+### 📦 Agente de Estoque
+> 👥 **Acesso: Farmácia e equipe de compras**
 
-Skills:
+**Skills:**
+- Monitoramento de medicamentos abaixo do estoque mínimo
+- Alertas de validade próxima ou vencida
+- Sugestões automáticas de reposição
+- Análise de consumo por período
+- Relatório de criticidade de insumos
 
-Monitoramento de receitas e despesas em tempo real
-Detecção de anomalias e duplicidades financeiras
-Análise de inadimplência por convênio
-Projeções e tendências financeiras
-Alertas de pagamentos em atraso
+---
 
+### 🧭 Agente Estratégico
+> 👥 **Acesso: Diretoria e liderança**
 
-📦 Agente de Estoque
+**Skills:**
+- Cruzamento de dados clínicos, financeiros e operacionais
+- Identificação de oportunidades de melhoria
+- Geração de insights estratégicos baseados em dados
+- Relatórios executivos automatizados
+- Recomendações de ações priorizadas pelo impacto
 
-👥 Acesso: Farmácia e equipe de compras
+---
 
-Skills:
+## 🛠️ Stack Tecnológica
 
-Monitoramento de medicamentos abaixo do estoque mínimo
-Alertas de validade próxima ou vencida
-Sugestões automáticas de reposição
-Análise de consumo por período
-Relatório de criticidade de insumos
+| Camada | Tecnologia | Função |
+|---|---|---|
+| Processamento | **Databricks Community** | Pipeline de dados + Medallion |
+| Linguagem | **Python + PySpark** | Transformações e lógica |
+| Agentes de IA | **LangChain + CrewAI** | Orquestração dos agentes |
+| LLM | **Claude API (Anthropic)** | Raciocínio e análise clínica |
+| Banco de Dados | **Supabase (PostgreSQL)** | Camada Gold + APIs |
+| Versionamento | **Git + GitHub** | Controle e colaboração |
+| IDE | **VS Code** | Desenvolvimento local |
 
+> 💡 **Filosofia do projeto:** 100% em modo free/gratuito — provando que com as ferramentas certas, pequenas equipes entregam soluções enterprise.
 
-🧭 Agente Estratégico
+---
 
-👥 Acesso: Diretoria e liderança
+## 📁 Estrutura do Repositório
 
-Skills:
-
-Cruzamento de dados clínicos, financeiros e operacionais
-Identificação de oportunidades de melhoria
-Geração de insights estratégicos baseados em dados
-Relatórios executivos automatizados
-Recomendações de ações priorizadas pelo impacto
-
-
-🛠️ Stack Tecnológica
-CamadaTecnologiaFunçãoProcessamentoDatabricks CommunityPipeline de dados + MedallionLinguagemPython + PySparkTransformações e lógicaAgentes de IALangChain + CrewAIOrquestração dos agentesLLMClaude API (Anthropic)Raciocínio e análise clínicaBanco de DadosSupabase (PostgreSQL)Camada Gold + APIsVersionamentoGit + GitHubControle e colaboraçãoIDEVS CodeDesenvolvimento local
-
-💡 Filosofia do projeto: 100% em modo free/gratuito — provando que com as ferramentas certas, pequenas equipes entregam soluções enterprise.
-
-
-📁 Estrutura do Repositório
+```
 agient-aria-health/
 │
 ├── 📂 data/
@@ -157,36 +179,43 @@ agient-aria-health/
 ├── .env.example              # Variáveis de ambiente necessárias
 ├── requirements.txt          # Dependências do projeto
 └── README.md
+```
 
-🚀 Roadmap do Projeto
+---
 
- Definição da arquitetura e stack
- Geração dos datasets fictícios
- Pipeline Bronze no Databricks
- Pipeline Silver no Databricks
- Pipeline Gold no Databricks
- 🔒 Agente Clínico de Quadro do Paciente (acesso médico)
- Agente de Indicadores de Atendimento
- Agente Financeiro
- Agente de Estoque
- Agente Estratégico
- Controle de acesso por perfil de usuário
- Integração com Supabase
- Documentação completa
+## 🚀 Roadmap do Projeto
 
+- [x] Definição da arquitetura e stack
+- [ ] Geração dos datasets fictícios
+- [ ] Pipeline Bronze no Databricks
+- [ ] Pipeline Silver no Databricks
+- [ ] Pipeline Gold no Databricks
+- [ ] 🔒 Agente Clínico de Quadro do Paciente (acesso médico)
+- [ ] Agente de Indicadores de Atendimento
+- [ ] Agente Financeiro
+- [ ] Agente de Estoque
+- [ ] Agente Estratégico
+- [ ] Controle de acesso por perfil de usuário
+- [ ] Integração com Supabase
+- [ ] Documentação completa
 
-💡 Método ARIA
-O ARIA não é apenas um projeto — é um método replicável desenvolvido pela Agient para transformar dados em inteligência em qualquer setor.
+---
+
+## 💡 Método ARIA
+
+O **ARIA** não é apenas um projeto — é um método replicável desenvolvido pela **Agient** para transformar dados em inteligência em qualquer setor.
+
 Após saúde, o método será aplicado em:
+- 🌱 Setor Agrícola
+- 💰 Setor Financeiro
+- 🍽️ Setor Alimentício
+- ⚡ Setor de Energia
 
-🌱 Setor Agrícola
-💰 Setor Financeiro
-🍽️ Setor Alimentício
-⚡ Setor de Energia
+---
 
+## 👨‍💻 Autor
 
-👨‍💻 Autor
-Vitor Marinho
+**Vitor Marinho**
 Engenheiro de Dados | AI Engineer | Fundador da Agient
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Vitor%20Marinho-blue)](https://www.linkedin.com/in/vitor-marinho/)
