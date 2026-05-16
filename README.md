@@ -1,3 +1,14 @@
+# 🧬 ARIA — Agente de Raciocínio e Inteligência em Análise Clínica
+
+> **Agient** | Agentes · Inteligência · Enterprise
+
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Stack](https://img.shields.io/badge/stack-Databricks%20%7C%20Claude%20AI%20%7C%20Supabase-blue)
+![Setor](https://img.shields.io/badge/setor-Sa%C3%BAde%20%7C%20Oncologia-red)
+![Método](https://img.shields.io/badge/m%C3%A9todo-ARIA-brightgreen)
+
+---
+
 🎯 Sobre o Projeto
 O Projeto ARIA é uma solução de inteligência de dados desenvolvida pela Agient para transformar a operação de centros oncológicos brasileiros.
 A maioria dos hospitais e clínicas no Brasil possui dados valiosos espalhados em planilhas, sistemas legados e arquivos isolados — sem estrutura, sem governança e sem inteligência. O resultado: decisões lentas, desperdício de recursos, atendimento comprometido.
