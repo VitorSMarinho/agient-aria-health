@@ -21,7 +21,7 @@ O ARIA resolve isso. Com uma arquitetura moderna de dados combinada a agentes de
 
 ## 🏥 Contexto — Cliente Fictício
 
-**Instituto Oncológico** — centro oncológico de médio porte com 3 unidades, 80 médicos e mais de 500 atendimentos/dia.
+**Instituto Oncológico** — centro oncológico de médio porte com 3 unidades, 80 médicos e mais de 200 atendimentos/dia.
 
 **Desafios identificados:**
 - Dados de pacientes, estoque e financeiro em silos isolados
@@ -146,7 +146,7 @@ Após saúde, o método será aplicado em:
 **Vitor Marinho**
 Engenheiro de Dados | AI Engineer | Fundador da Agient
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vitor%20Marinho-blue)](https://linkedin.com/in/seu-perfil)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vitor%20Marinho-blue)](https://www.linkedin.com/in/vitor-marinho/)
 [![GitHub](https://img.shields.io/badge/GitHub-VitorSMarinho-black)](https://github.com/VitorSMarinho)
 
 ---
