@@ -1,0 +1,51 @@
+id_item	nome_medicamento	categoria	quantidade_atual	quantidade_minima	unidade	fornecedor	data_validade	data_ultima_compra	valor_unitario
+EST001	Medicamento B1	Antiemético		48	Ampola	SintraFar	22/02/2026	2026-01-12	3623.74
+EST002	Medicamento C2	Insumo		29	Caixa	QuimiLog	30-01-25	25/04/2026	3052.34
+EST003	Medicamento D3	Analgésico	54	28	Caixa	SintraFar	08/03/24	2025-10-01	4933.48
+EST004	Medicamento E4	Antiemético	8	13	Caixa	SintraFar	20-05-25	03/02/2025	2359.67
+EST005	Medicamento F5	Antiemético		13	Comprimido	QuimiLog	2026-01-10	06/02/2026	3066.27
+EST006	Medicamento G6	Insumo		42	Caixa	MedOnco	06-11-25	19/04/2025	3041.55
+EST007	Medicamento H7	Insumo	16	17	Caixa	QuimiLog	07-02-27	2026-03-16	82.29
+EST008	Medicamento I8	Insumo		19	Frasco	SintraFar	03/09/2027	2025-08-22	4424.66
+EST009	Medicamento J9	Quimioterápico		25	Caixa	BioDistrib	19-01-25	2025-01-20	2320.37
+EST010	Medicamento K10	Analgésico		47	Caixa	SintraFar	09-06-27	13/02/25	166.62
+EST011	Medicamento L11	Insumo		34	Comprimido	BioDistrib	2024-09-23	02-06-25	3381.95
+EST012	Medicamento M12	Analgésico		22	Caixa	QuimiLog	08/05/2025	23/06/2025	1828.49
+EST013	Medicamento N13	Insumo	87	17	Caixa	SintraFar	2024-06-02	20/01/2026	3437.13
+EST014	Medicamento O14	Quimioterápico		33	Ampola	BioDistrib	2025-09-12	07/03/2025	3666.2
+EST015	Medicamento P15	Insumo		44	Comprimido	SintraFar	2026-04-20	16/01/2026	3688.52
+EST016	Medicamento Q16	Antiemético	92	45	Caixa	QuimiLog	28-05-24	21/01/2026	2351.94
+EST017	Medicamento R17	Antiemético		18	Frasco	BioDistrib	2026-09-09	2026-02-08	2511.44
+EST018	Medicamento S18	Insumo	14	15	Caixa	BioDistrib	2024-10-25	22/03/2026	1378.17
+EST019	Medicamento T19	Quimioterápico		48	Ampola	QuimiLog	03/09/26	17/02/25	1249.11
+EST020	Medicamento U20	Insumo	27	14	Frasco	BioDistrib	2025-11-14	2025-02-11	133.32
+EST021	Medicamento V21	Antiemético		19	Frasco	QuimiLog	24/10/26	2026-03-25	4076.6
+EST022	Medicamento W22	Quimioterápico	75	14	Ampola	BioDistrib	2027-05-15	02/07/25	987.44
+EST023	Medicamento X23	Analgésico	14	45	Caixa	BioDistrib	13-06-25	10/02/25	2798.26
+EST024	Medicamento Y24	Insumo	40	13	Comprimido	QuimiLog	23/10/27	16/02/26	939.35
+EST025	Medicamento Z25	Insumo		42	Comprimido	QuimiLog	01/09/26	10-04-25	2694.08
+EST026	Medicamento A26	Quimioterápico	22	16	Comprimido	MedOnco	26/11/2027	19/06/25	4955.88
+EST027	Medicamento B27	Insumo		40	Ampola	MedOnco	10/01/2027	03-10-25	3847.13
+EST028	Medicamento C28	Quimioterápico		25	Comprimido	SintraFar	20/08/2024	19-01-25	3626.89
+EST029	Medicamento D29	Insumo		42	Comprimido	MedOnco	01-05-26	05-10-25	4758.46
+EST030	Medicamento E30	Analgésico		42	Ampola	BioDistrib	02-10-27	28/08/2025	1649.77
+EST031	Medicamento F31	Quimioterápico	30	19	Comprimido	BioDistrib	13/05/26	25/08/25	4189.83
+EST032	Medicamento G32	Analgésico	80	39	Frasco	MedOnco	12-10-26	2025-08-20	530.75
+EST033	Medicamento H33	Antiemético		34	Comprimido	QuimiLog	23-08-27	07/01/26	4701.82
+EST034	Medicamento I34	Antiemético		29	Comprimido	SintraFar	2026-03-14	2025-10-27	4546.88
+EST035	Medicamento J35	Insumo	83	10	Ampola	SintraFar	2027-03-25	06/05/2025	3567.9
+EST036	Medicamento K36	Analgésico	10	36	Frasco	BioDistrib	20-11-27	11/09/2025	2858.32
+EST037	Medicamento L37	Quimioterápico	6	20	Frasco	MedOnco	29-06-25	04-06-25	1488.09
+EST038	Medicamento M38	Quimioterápico	88	34	Caixa	QuimiLog	02/01/2025	2025-03-11	4435.14
+EST039	Medicamento N39	Analgésico		39	Frasco	BioDistrib	2025-08-10	2025-04-29	4012.54
+EST040	Medicamento O40	Quimioterápico		28	Caixa	BioDistrib	2027-10-23	2025-07-04	2222.28
+EST041	Medicamento P41	Analgésico		19	Ampola	SintraFar	05/03/25	23/10/25	995.8
+EST042	Medicamento Q42	Analgésico		13	Caixa	SintraFar	2026-04-13	01-09-25	4628.53
+EST043	Medicamento R43	Analgésico	31	18	Frasco	SintraFar	05/04/2025	18/08/25	2529
+EST044	Medicamento S44	Insumo		18	Ampola	MedOnco	2025-06-23	24-04-25	2655.01
+EST045	Medicamento T45	Quimioterápico		40	Ampola	BioDistrib	14/04/2024	2026-01-17	2026.89
+EST046	Medicamento U46	Analgésico	14	31	Frasco	MedOnco	28/04/2025	06-11-25	3051.64
+EST047	Medicamento V47	Insumo		32	Caixa	MedOnco	13/08/2025	2025-10-29	1370.83
+EST048	Medicamento W48	Insumo	68	40	Comprimido	SintraFar	2025-06-06	09/09/2025	2309.37
+EST049	Medicamento X49	Antiemético	4	17	Frasco	BioDistrib	2027-12-13	19/06/25	805.57
+EST050	Medicamento Y50	Insumo		23	Ampola	MedOnco	05/12/2027	27/02/25	3700.13
