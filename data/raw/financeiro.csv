@@ -1,52 +1,52 @@
-id_transacao	data	tipo	descricao	categoria	valor	centro_custo	status_pagamento	convenio	observacoes
-TR001	2026-05-02	Despesa	Serviço/Produto 1	Insumos	14217.92	Operacional	Pago		
-TR002	20/01/2026	Receita	Serviço/Produto 2	Tratamento	3108.83	Faturamento	Pago	PlaneSaúde	
-TR003	06/05/2026	Despesa	Serviço/Produto 3	Tratamento	9522.57	Operacional	Pendente		
-TR004	20-04-26	Despesa	Serviço/Produto 4	Insumos	1213.66	Operacional	Pago		
-TR005	2026-01-02	Receita	Serviço/Produto 5	Convênio	3702.32	Faturamento	Pago	VitaCare	
-TR006	19-03-26	Despesa	Serviço/Produto 6	Convênio	3761.42	Operacional	Pago		
-TR007	26/01/26	Receita	Serviço/Produto 7	Salários	7539.13	Faturamento	Pendente	VitaCare	
-TR008	2026-01-11	Despesa	Serviço/Produto 8	Insumos	5218.96	Operacional	Pendente		
-TR009	2026-01-26	Despesa	Serviço/Produto 9	Insumos	12650.22	Operacional	Atrasado		
-TR010	11/04/26	Receita	Serviço/Produto 10	Convênio	15000	Faturamento	Pendente	MedPlus	
-TR011	2026-01-14	Despesa	Serviço/Produto 11	Tratamento	14548.09	Operacional	Pago		
-TR012	18/01/2026	Receita	Serviço/Produto 12	Salários	14111.4	Faturamento	Atrasado	NorteMedic	
-TR013	09/02/2026	Despesa	Serviço/Produto 13	Salários	662.34	Operacional	Pago		
-TR014	07/01/26	Receita	Serviço/Produto 14	Tratamento	7957.45	Faturamento	Pago	MedPlus	
-TR015	03/02/26	Despesa	Serviço/Produto 15	Insumos	2697.65	Operacional	Pendente		
-TR016	06-02-26	Receita	Serviço/Produto 16	Convênio	5681.08	Faturamento	Pago	NorteMedic	
-TR017	15-01-26	Despesa	Serviço/Produto 17	Tratamento	8466.35	Operacional	Pago		
-TR018	10-05-26	Despesa	Serviço/Produto 18	Convênio	12312.68	Operacional	Pendente		
-TR019	22-04-26	Despesa	Serviço/Produto 19	Convênio	5555.89	Operacional	Atrasado		
-TR020	16/01/2026	Despesa	Serviço/Produto 20	Insumos	8107.74	Operacional	Atrasado		
-TR021	23/02/26	Despesa	Serviço/Produto 21	Salários	10331.18	Operacional	Pago		
-TR022	2026-01-08	Despesa	Serviço/Produto 22	Convênio	1574.16	Operacional	Pendente		
-TR023	2026-04-14	Receita	Serviço/Produto 23	Salários	7543.03	Faturamento	Atrasado	SempreViva	
-TR024	05-01-26	Receita	Serviço/Produto 24	Convênio	14384.59	Faturamento	Atrasado	NorteMedic	
-TR025	2026-03-02	Despesa	Serviço/Produto 25	Tratamento	5294	Operacional	Atrasado		
-TR026	06/01/2026	Despesa	Serviço/Produto 26	Convênio	5253.01	Operacional	Pendente		
-TR027	2026-04-04	Receita	Serviço/Produto 27	Convênio	11564.04	Faturamento	Pendente	NorteMedic	
-TR028	13-03-26	Despesa	Serviço/Produto 28	Convênio	12376.17	Operacional	Pendente		
-TR029	26-04-26	Receita	Serviço/Produto 29	Convênio	11551.97	Faturamento	Pendente	NorteMedic	
-TR030	05/02/2026	Despesa	Serviço/Produto 30	Tratamento	1183.47	Operacional	Pendente		
-TR031	05/05/2026	Receita	Serviço/Produto 31	Insumos	7139.16	Faturamento	Atrasado	MedPlus	
-TR032	06/05/26	Receita	Serviço/Produto 32	Convênio	8172.67	Faturamento	Pendente	VitaCare	
-TR033	2026-02-10	Receita	Serviço/Produto 33	Insumos	7222.22	Faturamento	Atrasado	VitaCare	
-TR034	27/04/26	Despesa	Serviço/Produto 34	Tratamento	6114.79	Operacional	Atrasado		
-TR035	13-01-26	Despesa	Serviço/Produto 35	Salários	13942.96	Operacional	Atrasado		
-TR036	23-04-26	Receita	Serviço/Produto 36	Tratamento	5577.1	Faturamento	Pago	SempreViva	
-TR037	12/04/26	Receita	Serviço/Produto 37	Insumos	10359.6	Faturamento	Pago	VitaCare	
-TR038	08/04/26	Despesa	Serviço/Produto 38	Insumos	13623.5	Operacional	Atrasado		
-TR039	28-03-26	Receita	Serviço/Produto 39	Insumos	880.35	Faturamento	Pendente	MedPlus	
-TR040	2026-03-09	Despesa	Serviço/Produto 40	Tratamento	14388.64	Operacional	Atrasado		
-TR041	2026-01-01	Despesa	Serviço/Produto 41	Tratamento	10893.99	Operacional	Pago		
-TR042	15-02-26	Receita	Serviço/Produto 42	Convênio	10171.97	Faturamento	Pendente	NorteMedic	
-TR043	2026-05-10	Receita	Serviço/Produto 43	Convênio	12444.49	Faturamento	Pago	PlaneSaúde	
-TR044	03/02/2026	Despesa	Serviço/Produto 44	Salários	3035.69	Operacional	Atrasado		
-TR045	26/01/2026	Despesa	Serviço/Produto 45	Convênio	13972.13	Operacional	Pago		
-TR046	02-03-26	Receita	Serviço/Produto 46	Salários	434.19	Faturamento	Atrasado	VitaCare	
-TR047	2026-02-02	Receita	Serviço/Produto 47	Insumos	8046.96	Faturamento	Pendente	SempreViva	
-TR048	31/01/26	Receita	Serviço/Produto 48	Tratamento	6610.92	Faturamento	Pendente	VitaCare	
-TR049	2026-03-19	Receita	Serviço/Produto 49	Tratamento	12983.63	Faturamento	Pago	PlaneSaúde	
-TR050	18/03/26	Despesa	Serviço/Produto 50	Convênio	6050.22	Operacional	Pendente		
-TR011	2026-01-14	Despesa	Serviço/Produto 11	Tratamento	14548.09	Operacional	Pago		
+id_transacao,data,tipo,descricao,categoria,valor,centro_custo,status_pagamento,convenio,observacoes
+TR001,23-04-26,Receita,Serviço/Produto 1,Salários,14088.19,Faturamento,Pago,VitaCare,
+TR002,15/04/2026,Receita,Serviço/Produto 2,Insumos,3474.96,Faturamento,Pendente,MedPlus,
+TR003,14-04-26,Despesa,Serviço/Produto 3,Salários,4843.83,Operacional,Atrasado,,
+TR004,18/02/2026,Despesa,Serviço/Produto 4,Convênio,6676.12,Operacional,Atrasado,,
+TR005,10/01/2026,Receita,Serviço/Produto 5,Salários,1370.51,Faturamento,Pago,PlaneSaúde,
+TR006,2026-05-06,Despesa,Serviço/Produto 6,Insumos,11342.17,Operacional,Pendente,,
+TR007,21/01/2026,Receita,Serviço/Produto 7,Convênio,3884.28,Faturamento,Atrasado,NorteMedic,
+TR008,18/02/2026,Receita,Serviço/Produto 8,Convênio,12349.56,Faturamento,Pendente,SempreViva,
+TR009,2026-01-20,Despesa,Serviço/Produto 9,Tratamento,8875.92,Operacional,Atrasado,,
+TR010,24-03-26,Receita,Serviço/Produto 10,Convênio,3703.11,Faturamento,Pendente,PlaneSaúde,
+TR011,10/01/2026,Receita,Serviço/Produto 11,Tratamento,15000.0,Faturamento,Atrasado,PlaneSaúde,
+TR012,25/01/2026,Receita,Serviço/Produto 12,Convênio,3227.17,Faturamento,Atrasado,PlaneSaúde,
+TR013,11/03/2026,Despesa,Serviço/Produto 13,Insumos,7733.99,Operacional,Pago,,
+TR014,24/03/2026,Receita,Serviço/Produto 14,Salários,3298.74,Faturamento,Atrasado,PlaneSaúde,
+TR015,2026-04-18,Receita,Serviço/Produto 15,Convênio,14848.16,Faturamento,Pago,PlaneSaúde,
+TR016,04-01-26,Receita,Serviço/Produto 16,Tratamento,5068.75,Faturamento,Pendente,VitaCare,
+TR017,13/05/2026,Receita,Serviço/Produto 17,Convênio,10871.91,Faturamento,Pago,PlaneSaúde,
+TR018,17/04/2026,Despesa,Serviço/Produto 18,Tratamento,6078.6,Operacional,Pago,,
+TR019,25/01/2026,Receita,Serviço/Produto 19,Tratamento,12301.25,Faturamento,Pendente,PlaneSaúde,
+TR020,13/05/2026,Despesa,Serviço/Produto 20,Salários,4842.17,Operacional,Pendente,,
+TR021,2026-01-13,Receita,Serviço/Produto 21,Tratamento,4325.26,Faturamento,Pago,PlaneSaúde,
+TR022,25/01/2026,Despesa,Serviço/Produto 22,Salários,6612.35,Operacional,Pendente,,
+TR023,12/12/2022,Despesa,Serviço/Produto 23,Salários,3152.48,Operacional,Pendente,,
+TR024,2026-02-12,Despesa,Serviço/Produto 24,Insumos,6631.52,Operacional,Pago,,
+TR025,28/03/2026,Receita,Serviço/Produto 25,Tratamento,553.84,Faturamento,Pendente,MedPlus,
+TR026,19/04/2026,Despesa,Serviço/Produto 26,Salários,14088.08,Operacional,Atrasado,,
+TR027,24/09/2025,Despesa,Serviço/Produto 27,Tratamento,13360.59,Operacional,Pendente,,
+TR028,24-03-26,Despesa,Serviço/Produto 28,Convênio,8981.82,Operacional,Pendente,,
+TR029,2026-04-10,Despesa,Serviço/Produto 29,Insumos,8431.12,Operacional,Pendente,,
+TR030,22-04-25,Receita,Serviço/Produto 30,Salários,11082.9,Faturamento,Pendente,VitaCare,
+TR031,25-08-25,Despesa,Serviço/Produto 31,Insumos,5553.37,Operacional,Pago,,
+TR032,15/05/2025,Receita,Serviço/Produto 32,Tratamento,1351.48,Faturamento,Pago,SempreViva,
+TR033,26/08/24,Receita,Serviço/Produto 33,Tratamento,324.89,Faturamento,Atrasado,NorteMedic,
+TR034,22/04/2025,Receita,Serviço/Produto 34,Insumos,9874.1,Faturamento,Pendente,PlaneSaúde,
+TR035,01-10-23,Despesa,Serviço/Produto 35,Insumos,5321.4,Operacional,Pendente,,
+TR036,2026-03-09,Receita,Serviço/Produto 36,Tratamento,14782.91,Faturamento,Pendente,MedPlus,
+TR037,13/11/2025,Receita,Serviço/Produto 37,Insumos,346.52,Faturamento,Pago,MedPlus,
+TR038,15-05-25,Despesa,Serviço/Produto 38,Tratamento,10481.56,Operacional,Pendente,,
+TR039,02/02/2025,Despesa,Serviço/Produto 39,Salários,7763.52,Operacional,Pendente,,
+TR040,14/01/2025,Receita,Serviço/Produto 40,Tratamento,4325.75,Faturamento,Atrasado,SempreViva,
+TR041,20/03/2025,Despesa,Serviço/Produto 41,Insumos,12391.55,Operacional,Atrasado,,
+TR042,2025-11-20,Receita,Serviço/Produto 42,Insumos,11305.12,Faturamento,Atrasado,VitaCare,
+TR043,14-06-25,Receita,Serviço/Produto 43,Insumos,480.9,Faturamento,Pago,VitaCare,
+TR044,22/04/2025,Despesa,Serviço/Produto 44,Tratamento,13324.86,Operacional,Pago,,
+TR045,04/09/2025,Despesa,Serviço/Produto 45,Tratamento,432.12,Operacional,Pago,,
+TR046,21-12-25,Despesa,Serviço/Produto 46,Salários,14310.22,Operacional,Pendente,,
+TR047,19/02/2025,Receita,Serviço/Produto 47,Insumos,7765.18,Faturamento,Pendente,SempreViva,
+TR048,04/06/2025,Receita,Serviço/Produto 48,Insumos,310.42,Faturamento,Atrasado,PlaneSaúde,
+TR049,02-09-25,Receita,Serviço/Produto 49,Tratamento,1142.15,Faturamento,Atrasado,PlaneSaúde,
+TR050,25/07/2025,Receita,Serviço/Produto 50,Tratamento,2241.6,Faturamento,Pago,VitaCare,
+TR011,10/01/2026,Receita,Serviço/Produto 11,Tratamento,15000.0,Faturamento,Atrasado,PlaneSaúde,

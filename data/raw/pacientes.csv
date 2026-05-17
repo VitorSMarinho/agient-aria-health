@@ -1,51 +1,51 @@
-id_paciente	nome_ficticio	idade	genero	tipo_cancer	estadiamento	data_entrada	medico_responsavel	convenio	status_tratamento
-1	Paciente Fictício 1	80	M	Mama	Estágio I	10/03/2024	Dr. Benício Vale	SempreViva	Em tratamento
-2	Paciente Fictício 2	76	M	Pulmão	Estágio I	23/07/24	Dra. Soraia Melo	VitaCare	Paliativo
-3	Paciente Fictício 3		M	Pulmão	Estágio IV	01-11-23	Dra. Soraia Melo	NorteMedic	Concluído
-4	Paciente Fictício 4		F	Mama	Estágio IV	28-02-23	Dra. Soraia Melo	SempreViva	Em tratamento
-5	Paciente Fictício 5		M	Linfoma	Estágio III	2024-07-06	Dr. Cassiano Faria	Particular	Em tratamento
-6	Paciente Fictício 6		M	Próstata		05/12/2023	Dr. Cassiano Faria	VitaCare	Seguimento
-7	Paciente Fictício 7		F	Leucemia	Estágio II	12/01/2023	Dr. Alisson Vega	NorteMedic	Paliativo
-8	Paciente Fictício 8		F	Mama	Estágio IV	22/01/2024	Dra. Soraia Melo	PlaneSaúde	Paliativo
-9	Paciente Fictício 9	25	F	Linfoma	Estágio I	20-03-24	Dra. Morgana Luz	PlaneSaúde	Em tratamento
-10	Paciente Fictício 10	20	M	Leucemia	Estágio II	24-05-23	Dra. Soraia Melo	MedPlus	Seguimento
-11	Paciente Fictício 11	23	M	Leucemia	Estágio IV	08/03/2024	Dra. Soraia Melo	SempreViva	Em tratamento
-12	Paciente Fictício 12		F	Linfoma	Estágio I	17/09/2024	Dr. Benício Vale	VitaCare	Paliativo
-13	Paciente Fictício 13		F	Próstata	Estágio IV	21-05-24	Dr. Alisson Vega	NorteMedic	Paliativo
-14	Paciente Fictício 14		F	Leucemia	Estágio II	09-01-24	Dr. Alisson Vega	PlaneSaúde	Seguimento
-15	Paciente Fictício 15	72	F	Colorretal	Estágio III	25/06/24	Dr. Benício Vale	SempreViva	Paliativo
-16	Paciente Fictício 16		M	Mama	Estágio I	2024-07-06	Dra. Soraia Melo	PlaneSaúde	Paliativo
-17	Paciente Fictício 17	44	F	Leucemia	Estágio III	2024-12-27	Dr. Cassiano Faria	MedPlus	Em tratamento
-18	Paciente Fictício 18	50	F	Mama	Estágio II	15/02/2024	Dra. Soraia Melo	SempreViva	Em tratamento
-19	Paciente Fictício 19		F	Linfoma	Estágio IV	2024-12-29	Dr. Benício Vale	SempreViva	Seguimento
-20	Paciente Fictício 20		M	Linfoma	Estágio I	11/04/2024	Dr. Alisson Vega	VitaCare	Em tratamento
-21	Paciente Fictício 21		F	Pulmão	Estágio I	2024-07-27	Dra. Morgana Luz	SempreViva	Concluído
-22	Paciente Fictício 22		F	Pulmão	Estágio IV	24/09/2023	Dra. Morgana Luz	Particular	Paliativo
-23	Paciente Fictício 23	67	M	Colorretal	Estágio I	25/11/2024	Dr. Benício Vale	MedPlus	Concluído
-24	Paciente Fictício 24		M	Pulmão	Estágio II	10/05/24	Dr. Benício Vale	NorteMedic	Paliativo
-25	Paciente Fictício 25	78	M	Pulmão		2024-03-17	Dr. Alisson Vega	VitaCare	Seguimento
-26	Paciente Fictício 26	30	F	Próstata	Estágio III	2023-07-06	Dra. Morgana Luz	MedPlus	Paliativo
-27	Paciente Fictício 27		F	Linfoma	Estágio II	29-08-23	Dr. Benício Vale	SempreViva	Em tratamento
-28	Paciente Fictício 28		F	Pulmão	Estágio III	08-12-23	Dra. Soraia Melo	PlaneSaúde	Concluído
-29	Paciente Fictício 29		M	Leucemia	Estágio I	2024-12-22	Dr. Alisson Vega	SempreViva	Seguimento
-30	Paciente Fictício 30		F	Pulmão	Estágio IV	2024-04-17	Dra. Morgana Luz	MedPlus	Seguimento
-31	Paciente Fictício 31	61	M	Leucemia	Estágio IV	13/12/2023	Dr. Cassiano Faria	Particular	Seguimento
-32	Paciente Fictício 32	56	F	Colorretal	Estágio II	25-03-23	Dra. Morgana Luz	Particular	Em tratamento
-33	Paciente Fictício 33	44	F	Linfoma	Estágio I	20-03-24	Dr. Cassiano Faria	NorteMedic	Seguimento
-34	Paciente Fictício 34	60	M	Linfoma	Estágio III	12/03/24	Dra. Soraia Melo	VitaCare	Em tratamento
-35	Paciente Fictício 35	52	M	Mama	Estágio I	23-07-24	Dr. Cassiano Faria	MedPlus	Concluído
-36	Paciente Fictício 36	46	M	Colorretal	Estágio I	25/09/23	Dr. Alisson Vega	Particular	Paliativo
-37	Paciente Fictício 37	27	M	Leucemia	Estágio I	2024-10-12	Dr. Alisson Vega	PlaneSaúde	Paliativo
-38	Paciente Fictício 38		F	Linfoma	Estágio I	30/03/23	Dra. Soraia Melo	MedPlus	Concluído
-39	Paciente Fictício 39		M	Colorretal		2024-12-30	Dr. Benício Vale	VitaCare	Paliativo
-40	Paciente Fictício 40		M	Leucemia	Estágio II	12/10/2023	Dr. Alisson Vega	MedPlus	Paliativo
-41	Paciente Fictício 41		F	Leucemia	Estágio III	11-09-24	Dr. Alisson Vega	VitaCare	Paliativo
-42	Paciente Fictício 42		F	Mama	Estágio I	03-02-23	Dr. Alisson Vega	MedPlus	Paliativo
-43	Paciente Fictício 43	65	M	Leucemia	Estágio II	27-09-24	Dr. Benício Vale	SempreViva	Concluído
-44	Paciente Fictício 44	37	M	Próstata	Estágio IV	30/04/2024	Dra. Soraia Melo	VitaCare	Concluído
-45	Paciente Fictício 45		F	Mama	Estágio II	01/04/23	Dr. Cassiano Faria	MedPlus	Paliativo
-46	Paciente Fictício 46		M	Leucemia	Estágio IV	03/08/2024	Dr. Alisson Vega	Particular	Concluído
-47	Paciente Fictício 47	67	M	Próstata	Estágio III	06-02-23	Dr. Benício Vale	MedPlus	Seguimento
-48	Paciente Fictício 48	68	M	Linfoma	Estágio I	04/05/2023	Dra. Morgana Luz	NorteMedic	Concluído
-49	Paciente Fictício 49		M	Pulmão	Estágio IV	18/08/2024	Dr. Benício Vale	SempreViva	Concluído
-50	Paciente Fictício 50	49	F	Mama	Estágio III	16-06-24	Dra. Soraia Melo	PlaneSaúde	Concluído
+id_paciente,nome_ficticio,idade,genero,tipo_cancer,estadiamento,data_entrada,medico_responsavel,convenio,status_tratamento
+1,Paciente Fictício 1,74.0,F,Leucemia,Estágio III,2023-04-18,Dr. Cassiano Faria,NorteMedic,Paliativo
+2,Paciente Fictício 2,,F,Leucemia,Estágio II,23-05-24,Dra. Morgana Luz,SempreViva,Concluído
+3,Paciente Fictício 3,25.0,M,Colorretal,Estágio II,21/04/24,Dr. Alisson Vega,Particular,Seguimento
+4,Paciente Fictício 4,20.0,F,Linfoma,Estágio IV,02/10/2023,Dra. Soraia Melo,VitaCare,Paliativo
+5,Paciente Fictício 5,74.0,F,Prostata,Estágio I,18/11/24,Dr. Alisson Vega,PlaneSaúde,Paliativo
+6,Paciente Fictício 6,85.0,F,Linfoma,,2023-09-02,Dra. Morgana Luz,SempreViva,Concluído
+7,Paciente Fictício 7,29.0,M,Pulmão,Estágio I,22-04-24,Dr. Benício Vale,PlaneSaúde,Seguimento
+8,Paciente Fictício 8,66.0,M,Mama,Estágio IV,2024-11-23,Dr. Benício Vale,PlaneSaúde,Paliativo
+9,Paciente Fictício 9,69.0,F,Linfoma,Estágio I,04/09/24,Dr. Cassiano Faria,Particular,Em tratamento
+10,Paciente Fictício 10,75.0,M,Leucemia,Estágio IV,27/02/2024,Dr. Benício Vale,VitaCare,Concluído
+11,Paciente Fictício 11,35.0,F,Pulmão,Estágio III,2023-03-24,Dr. Alisson Vega,SempreViva,Em tratamento
+12,Paciente Fictício 12,38.0,F,Colorretal,Estágio IV,05/11/24,Dr. Alisson Vega,Particular,Paliativo
+13,Paciente Fictício 13,38.0,F,Pulmão,Estágio IV,17-09-23,Dr. Benício Vale,VitaCare,Seguimento
+14,Paciente Fictício 14,35.0,F,Leucemia,Estágio I,2024-11-13,Dr. Cassiano Faria,Particular,Em tratamento
+15,Paciente Fictício 15,31.0,F,Prostata,Estágio II,21/07/2024,Dra. Soraia Melo,MedPlus,Paliativo
+16,Paciente Fictício 16,,F,Pulmão,Estágio III,03-12-24,Dr. Cassiano Faria,Particular,Paliativo
+17,Paciente Fictício 17,29.0,M,Mama,Estágio I,24/09/2023,Dra. Soraia Melo,Particular,Em tratamento
+18,Paciente Fictício 18,36.0,M,Leucemia,,16/09/24,Dra. Soraia Melo,NorteMedic,Paliativo
+19,Paciente Fictício 19,77.0,M,Mama,Estágio I,12/11/2024,Dr. Cassiano Faria,PlaneSaúde,Paliativo
+20,Paciente Fictício 20,44.0,F,Prostata,Estágio IV,18/12/2024,Dr. Benício Vale,NorteMedic,Paliativo
+21,Paciente Fictício 21,35.0,M,Prostata,Estágio II,10/05/24,Dr. Alisson Vega,PlaneSaúde,Seguimento
+22,Paciente Fictício 22,23.0,M,Colorretal,Estágio III,21-02-23,Dra. Morgana Luz,MedPlus,Em tratamento
+23,Paciente Fictício 23,38.0,F,Pulmão,Estágio II,2023-01-20,Dr. Benício Vale,MedPlus,Concluído
+24,Paciente Fictício 24,67.0,M,Mama,Estágio III,01-10-23,Dr. Alisson Vega,NorteMedic,Seguimento
+25,Paciente Fictício 25,66.0,M,Leucemia,Estágio IV,2023-11-20,Dr. Benício Vale,PlaneSaúde,Paliativo
+26,Paciente Fictício 26,44.0,F,Prostata,Estágio II,26/08/24,Dr. Cassiano Faria,SempreViva,Paliativo
+27,Paciente Fictício 27,85.0,F,Linfoma,Estágio III,20/03/2022,Dra. Soraia Melo,PlaneSaúde,Seguimento
+28,Paciente Fictício 28,49.0,M,Colorretal,Estágio IV,22-09-24,Dra. Morgana Luz,Particular,Paliativo
+29,Paciente Fictício 29,82.0,M,Mama,Estágio II,2024-03-09,Dr. Alisson Vega,VitaCare,Paliativo
+30,Paciente Fictício 30,30.0,F,Leucemia,Estágio IV,2023-11-09,Dr. Cassiano Faria,PlaneSaúde,Concluído
+31,Paciente Fictício 31,52.0,F,Pulmão,Estágio II,27/02/2022,Dr. Alisson Vega,SempreViva,Em tratamento
+32,Paciente Fictício 32,59.0,M,Mama,Estágio I,11-07-22,Dr. Cassiano Faria,VitaCare,Concluído
+33,Paciente Fictício 33,51.0,M,Prostata,Estágio I,20/07/2023,Dra. Soraia Melo,PlaneSaúde,Paliativo
+34,Paciente Fictício 34,70.0,F,Colorretal,Estágio I,13/11/2022,Dr. Cassiano Faria,VitaCare,Seguimento
+35,Paciente Fictício 35,46.0,M,Mama,,13-11-23,Dra. Soraia Melo,VitaCare,Paliativo
+36,Paciente Fictício 36,37.0,F,Mama,Estágio II,17/04/2023,Dr. Alisson Vega,NorteMedic,Em tratamento
+37,Paciente Fictício 37,24.0,M,Mama,Estágio IV,03/06/2023,Dra. Soraia Melo,Particular,Seguimento
+38,Paciente Fictício 38,76.0,F,Mama,Estágio III,2025-05-18,Dr. Cassiano Faria,PlaneSaúde,Paliativo
+39,Paciente Fictício 39,53.0,F,Colorretal,Estágio I,2024-12-07,Dra. Morgana Luz,NorteMedic,Em tratamento
+40,Paciente Fictício 40,31.0,F,Prostata,Estágio III,02-12-22,Dr. Cassiano Faria,SempreViva,Concluído
+41,Paciente Fictício 41,,F,Colorretal,Estágio IV,21-03-22,Dr. Benício Vale,Particular,Concluído
+42,Paciente Fictício 42,76.0,M,Pulmão,Estágio III,19-01-24,Dra. Soraia Melo,SempreViva,Paliativo
+43,Paciente Fictício 43,45.0,M,Mama,Estágio III,20/12/2023,Dr. Cassiano Faria,PlaneSaúde,Em tratamento
+44,Paciente Fictício 44,40.0,M,Linfoma,Estágio IV,13/05/2023,Dr. Alisson Vega,VitaCare,Seguimento
+45,Paciente Fictício 45,63.0,F,Prostata,,24-03-24,Dra. Morgana Luz,SempreViva,Concluído
+46,Paciente Fictício 46,75.0,M,Linfoma,Estágio III,17/02/2023,Dra. Morgana Luz,NorteMedic,Em tratamento
+47,Paciente Fictício 47,40.0,M,Linfoma,Estágio I,2025-02-14,Dr. Alisson Vega,Particular,Paliativo
+48,Paciente Fictício 48,27.0,M,Pulmão,Estágio I,21/04/2023,Dr. Alisson Vega,Particular,Paliativo
+49,Paciente Fictício 49,85.0,F,Linfoma,Estágio IV,2023-11-20,Dr. Benício Vale,MedPlus,Concluído
+50,Paciente Fictício 50,56.0,M,Pulmão,Estágio I,12/12/2022,Dr. Alisson Vega,MedPlus,Seguimento
