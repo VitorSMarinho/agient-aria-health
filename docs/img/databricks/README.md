@@ -19,7 +19,7 @@ Automatizar a arquitetura Medallion garantindo que:
 ### Estrutura de Pastas
 
 <p align="center">
-  <img src="docs/img/medallion.svg" width="70%" alt="Estrutura Medallion">
+  <img src="img/medallion.svg" width="70%" alt="Estrutura Medallion">
 </p>
 /FileStore/tables/aria/
 ├── bronze/ # 🥉 Dados brutos (imutáveis)
