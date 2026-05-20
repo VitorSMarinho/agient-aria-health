@@ -11,7 +11,7 @@ A camada Gold é consumida pela aplicação ARIA através da FastAPI, garantindo
 O projeto utiliza políticas de segurança via Row-Level Security (RLS) para controle de acesso aos dados disponibilizados pelas APIs REST do Supabase.
 
 <p align="center">
-  <img src="../../../img/aria_supabase_schema_gold.png" width="100%" alt="Supabase Gold Schema">
+  <img src="../../img/aria_supabase.png" width="100%" alt="Supabase Gold Schema">
   <br>
   <em>Enable API Access via Row-Level Security</em>
 </p>
