@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/img/aria-architecture.svg" width="100%">
+  <img src="docs/img/aria_medallion_architecture.svg" width="100%">
 </p>
 
 # 🧬 ARIA — Agente de Raciocínio e Inteligência em Análise Clínica
