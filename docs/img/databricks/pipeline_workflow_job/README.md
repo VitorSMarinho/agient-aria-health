@@ -20,7 +20,7 @@ O pipeline é executado em **4 etapas sequenciais**:
 A estrutura de dados segue o padrão **Medallion Architecture** com camadas progressivas de refinamento:
 
 <p align="center">
-  <img src="docs/img/medallion.png" width="80%" alt="Estrutura de pastas Medallion">
+  <img src="docs/img/medallion.svg" width="80%" alt="Estrutura de pastas Medallion">
   <br>
   <em>Organização física das camadas Bronze, Silver e Gold no Databricks</em>
 </p>
@@ -32,10 +32,7 @@ A estrutura de dados segue o padrão **Medallion Architecture** com camadas prog
 Todas as tabelas são catalogadas e rastreadas pelo **Unity Catalog**, garantindo lineage automático e auditoria completa:
 
 <p align="center">
-<<<<<<< HEAD
-  <img src="docs/img/Catalog.png" width="90%" alt="Unity Catalog - Tabelas ARIA">
-=======
-  <img src="docs/img/databricks/pipeline_workflow_job/Catalog.png" width="90%" alt="Unity Catalog - Tabelas ARIA">
+  <img src="docs/img/Catalog.svg" width="90%" alt="Unity Catalog - Tabelas ARIA">
 >>>>>>> 19f2660b53f60cf79c4675d2fba2e77ed22deb01
   <br>
   <em>Visão completa das tabelas nas camadas Bronze, Silver e Gold</em>
@@ -48,7 +45,7 @@ Todas as tabelas são catalogadas e rastreadas pelo **Unity Catalog**, garantind
 O workflow orquestra todos os notebooks de forma automatizada, com dependências claras entre as tarefas:
 
 <p align="center">
-  <img src="docs/img/job_run.png" width="100%" alt="Databricks Job em execução">
+  <img src="docs/img/job_run.svg" width="100%" alt="Databricks Job em execução">
   <br>
   <em>Pipeline em execução — processamento distribuído com Apache Spark</em>
 </p>
@@ -60,7 +57,7 @@ O workflow orquestra todos os notebooks de forma automatizada, com dependências
 Após a validação final, o pipeline confirma que todos os dados estão prontos para consumo:
 
 <p align="center">
-  <img src="docs/img/job_success.png" width="100%" alt="Job concluído com sucesso">
+  <img src="docs/img/job_success.svg" width="100%" alt="Job concluído com sucesso">
   <br>
   <em>Todas as etapas executadas com sucesso ✓</em>
 </p>
@@ -82,4 +79,4 @@ Após a validação final, o pipeline confirma que todos os dados estão prontos
 ---
 
 > 📖 **Quer ver os detalhes técnicos?**  
-> Confira a [Documentação Completa do Pipeline](docs/pipeline_databricks.md)
+> Confira a [Documentação Completa do Pipeline](docs/databricks/README.md)
