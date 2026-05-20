@@ -19,7 +19,7 @@ Automatizar a arquitetura Medallion garantindo que:
 ### Estrutura de Pastas
 
 <p align="center">
-  <img src="images/databricks/medallion.png" width="70%" alt="Estrutura Medallion">
+  <img src="docs/img/databricks/medallion.png" width="70%" alt="Estrutura Medallion">
 </p>
 /FileStore/tables/aria/
 ├── bronze/ # 🥉 Dados brutos (imutáveis)
@@ -47,7 +47,7 @@ text
 ## 🗄️ Unity Catalog — Governança
 
 <p align="center">
-  <img src="images/databricks/catalog.png" width="90%" alt="Unity Catalog">
+  <img src="docs/img/databricks/catalog.png" width="90%" alt="Unity Catalog">
 </p>
 
 ### Tabelas Catalogadas
@@ -163,7 +163,7 @@ Retry automático em caso de falha transitória
 Logs detalhados de cada etapa
 Monitoramento de performance em tempo real
 Job Concluído com Sucesso
-<p align="center"> <img src="images/pipeline/job_success.png" width="100%" alt="Job concluído"> </p>
+<p align="center"> <img src="docs/img/pipeline/job_success.png" width="100%" alt="Job concluído"> </p>
 Resultado:
 
 ✅ Todas as 4 camadas executadas
