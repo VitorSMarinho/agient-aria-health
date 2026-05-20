@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/aria-architecture.svg" width="100%">
+  <img src="docs/img/aria_medallion_architecture.svg" width="100%">
 </p>
 
 # 🧬 ARIA — Agente de Raciocínio e Inteligência em Análise Clínica
@@ -65,7 +65,7 @@ O projeto foi desenvolvido para demonstrar como pequenas equipes podem construir
 O ARIA utiliza uma arquitetura moderna baseada em Data Lakehouse, arquitetura Medallion e agentes autônomos de IA para transformar dados clínicos, financeiros e operacionais em inteligência estratégica em tempo real.
 
 <p align="center">
-  <img src="docs/images/aria-architecture.svg" alt="Arquitetura ARIA" width="100%">
+  <img src="docs/img/aria_medallion_architecture.svg" alt="Arquitetura ARIA" width="100%">
 </p>
 
 ## 🔄 Fluxo da Solução
