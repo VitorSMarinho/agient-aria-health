@@ -186,17 +186,17 @@ agient-aria-health/
 ## 🚀 Roadmap do Projeto
 
 - [x] Definição da arquitetura e stack
-- [ ] Geração dos datasets fictícios
-- [ ] Pipeline Bronze no Databricks
-- [ ] Pipeline Silver no Databricks
-- [ ] Pipeline Gold no Databricks
-- [ ] 🔒 Agente Clínico de Quadro do Paciente (acesso médico)
+- [x] Geração dos datasets fictícios
+- [x] Pipeline Bronze no Databricks
+- [x] Pipeline Silver no Databricks
+- [x] Pipeline Gold no Databricks
+- [x] 🔒 Agente Clínico de Quadro do Paciente (acesso médico)
 - [ ] Agente de Indicadores de Atendimento
 - [ ] Agente Financeiro
 - [ ] Agente de Estoque
 - [ ] Agente Estratégico
 - [ ] Controle de acesso por perfil de usuário
-- [ ] Integração com Supabase
+- [x] Integração com Supabase
 - [ ] Documentação completa
 
 ---
