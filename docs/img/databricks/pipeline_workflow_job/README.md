@@ -32,7 +32,11 @@ A estrutura de dados segue o padrão **Medallion Architecture** com camadas prog
 Todas as tabelas são catalogadas e rastreadas pelo **Unity Catalog**, garantindo lineage automático e auditoria completa:
 
 <p align="center">
+<<<<<<< HEAD
   <img src="docs/img/Catalog.png" width="90%" alt="Unity Catalog - Tabelas ARIA">
+=======
+  <img src="docs/img/databricks/pipeline_workflow_job/Catalog.png" width="90%" alt="Unity Catalog - Tabelas ARIA">
+>>>>>>> 19f2660b53f60cf79c4675d2fba2e77ed22deb01
   <br>
   <em>Visão completa das tabelas nas camadas Bronze, Silver e Gold</em>
 </p>

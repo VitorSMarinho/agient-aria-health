@@ -47,7 +47,11 @@ text
 ## 🗄️ Unity Catalog — Governança
 
 <p align="center">
+<<<<<<< HEAD
   <img src="docs/img/Catalog.png" width="90%" alt="Unity Catalog">
+=======
+  <img src="docs/img/databricks/pipeline_workflow_job/Catalog.png" width="90%" alt="Unity Catalog">
+>>>>>>> 19f2660b53f60cf79c4675d2fba2e77ed22deb01
 </p>
 
 ### Tabelas Catalogadas
@@ -155,7 +159,11 @@ Se todas as validações passarem, os dados são liberados para o Supabase.
 
 🚀 Execução do Workflow
 Job em Execução
+<<<<<<< HEAD
 <p align="center"> <img src="docs/img/job_run.png" width="100%" alt="Job rodando"> </p>
+=======
+<p align="center"> <img src="docs/img/databricks/pipeline/job_run.png" width="100%" alt="Job rodando"> </p>
+>>>>>>> 19f2660b53f60cf79c4675d2fba2e77ed22deb01
 Características:
 
 Paralelização automática das tarefas independentes
@@ -163,7 +171,11 @@ Retry automático em caso de falha transitória
 Logs detalhados de cada etapa
 Monitoramento de performance em tempo real
 Job Concluído com Sucesso
+<<<<<<< HEAD
 <p align="center"> <img src="docs/img/job_success.png" width="100%" alt="Job concluído"> </p>
+=======
+<p align="center"> <img src="docs/img/databricks/pipeline/job_sucess.png" width="100%" alt="Job concluído"> </p>
+>>>>>>> 19f2660b53f60cf79c4675d2fba2e77ed22deb01
 Resultado:
 
 ✅ Todas as 4 camadas executadas
