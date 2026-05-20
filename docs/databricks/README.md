@@ -26,7 +26,7 @@ A plataforma ARIA utiliza o padrão Medallion para organizar os dados em camadas
 Todas as tabelas são catalogadas e rastreadas automaticamente utilizando Unity Catalog.
 
 <p align="center">
-  <img src="../img/unity_catalog.png" width="60%" alt="Unity Catalog">
+  <img src="../img/unity_catalog.png" width="30%" alt="Unity Catalog">
 </p>
 
 ---
@@ -46,7 +46,7 @@ O pipeline executa automaticamente todas as etapas da arquitetura.
 Execução finalizada com sucesso após validações da camada Gold.
 
 <p align="center">
-  <img src="../img/job_success.png" width="60%" alt="Pipeline Success">
+  <img src="../img/job_sucess.png" width="30%" alt="Pipeline Success">
 </p>
 
 ---
