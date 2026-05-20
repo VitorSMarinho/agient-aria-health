@@ -16,7 +16,7 @@ Esta documentação apresenta a arquitetura de engenharia de dados do projeto AR
 A plataforma ARIA utiliza o padrão Medallion para organizar os dados em camadas progressivas de refinamento.
 
 <p align="center">
-  <img src="../img/medallion.png" width="60%" alt="Arquitetura Medallion">
+  <img src="../img/medallion.png" width="20%" alt="Arquitetura Medallion">
 </p>
 
 ---
