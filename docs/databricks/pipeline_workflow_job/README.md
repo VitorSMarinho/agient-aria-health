@@ -18,7 +18,7 @@ O pipeline é dividido em 4 etapas:
 # 🚀 Execução do Workflow
 
 <p align="center">
-  <img src="../../img/job_run.svg" width="100%" alt="Workflow Execution">
+  <img src="../../img/job_run.png" width="600%" alt="Workflow Execution">
 </p>
 
 ---
@@ -26,7 +26,7 @@ O pipeline é dividido em 4 etapas:
 # ✅ Execução Concluída
 
 <p align="center">
-  <img src="../../img/job_success.svg" width="100%" alt="Workflow Success">
+  <img src="../../img/job_success.png" width="40%" alt="Workflow Success">
 </p>
 
 ---
@@ -47,7 +47,7 @@ O pipeline é dividido em 4 etapas:
 # 📊 Estrutura das Camadas
 
 <p align="center">
-  <img src="../../img/medallion.svg" width="80%" alt="Estrutura Medallion">
+  <img src="../../img/medallion.png" width="40%" alt="Estrutura Medallion">
 </p>
 
 🏠 Documentação Databricks | [Voltar para Databricks Architecture](../README.md)
