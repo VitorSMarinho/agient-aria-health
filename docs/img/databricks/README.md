@@ -19,7 +19,7 @@ Automatizar a arquitetura Medallion garantindo que:
 ### Estrutura de Pastas
 
 <p align="center">
-  <img src="docs/img/databricks/pipeline_workflow_job/medallion.png" width="70%" alt="Estrutura Medallion">
+  <img src="docs/img/medallion.png" width="70%" alt="Estrutura Medallion">
 </p>
 /FileStore/tables/aria/
 ├── bronze/ # 🥉 Dados brutos (imutáveis)
@@ -47,7 +47,7 @@ text
 ## 🗄️ Unity Catalog — Governança
 
 <p align="center">
-  <img src="docs/img/databricks/pipeline_workflow_job/catalog.png" width="90%" alt="Unity Catalog">
+  <img src="docs/img/Catalog.png" width="90%" alt="Unity Catalog">
 </p>
 
 ### Tabelas Catalogadas
@@ -155,7 +155,7 @@ Se todas as validações passarem, os dados são liberados para o Supabase.
 
 🚀 Execução do Workflow
 Job em Execução
-<p align="center"> <img src="images/databricks/pipeline/job_run.png" width="100%" alt="Job rodando"> </p>
+<p align="center"> <img src="docs/img/job_run.png" width="100%" alt="Job rodando"> </p>
 Características:
 
 Paralelização automática das tarefas independentes
@@ -163,7 +163,7 @@ Retry automático em caso de falha transitória
 Logs detalhados de cada etapa
 Monitoramento de performance em tempo real
 Job Concluído com Sucesso
-<p align="center"> <img src="docs/img/databricks/pipeline/job_success.png" width="100%" alt="Job concluído"> </p>
+<p align="center"> <img src="docs/img/job_success.png" width="100%" alt="Job concluído"> </p>
 Resultado:
 
 ✅ Todas as 4 camadas executadas
@@ -195,12 +195,7 @@ Silver Transformation	~3 min	~50k registros
 Gold KPI Generation	~2 min	12 KPIs calculados
 Validation Layer	~1 min	15 testes executados
 Total	~8 min	Pipeline completo
-🔗 Próximos Passos
- Migrar para Delta Lake (ACID transactions)
- Implementar Streaming com Auto Loader
- Adicionar Unity Catalog com controle granular de acesso
- Configurar alertas automáticos via Databricks SQL
- Integrar com dbt para transformações mais complexas
+
 📚 Referências
 Databricks Workflows Documentation
 Medallion Architecture
