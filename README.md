@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <p align="center">
   <img src="docs/img/aria_medallion_architecture.svg" width="100%">
 </p>
