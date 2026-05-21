@@ -4,7 +4,6 @@
 </p>
 
 =======
->>>>>>> 9afa892c3c6d1ee2288002849820201a2b72b28f
 # 🧬 ARIA — Agente de Raciocínio e Inteligência em Análise Clínica
 
 > Plataforma de inteligência de dados e agentes de IA aplicada à saúde oncológica.
@@ -72,7 +71,6 @@ O ARIA utiliza uma arquitetura moderna baseada em Data Lakehouse, arquitetura Me
   <img src="docs/img/aria_medallion_architecture.svg" alt="Arquitetura ARIA" width="100%">
 =======
   <img src="docs/img/aria_medallion_architecture.svg" width="100%">
->>>>>>> 9afa892c3c6d1ee2288002849820201a2b72b28f
 </p>
 
 ## 🔄 Fluxo da Solução
