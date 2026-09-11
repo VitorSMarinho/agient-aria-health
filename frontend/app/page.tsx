@@ -10,7 +10,9 @@ import {
   Loader2,
 } from "lucide-react";
 
-const API_URL = process.env.NEXT_PUBLIC_ARIA_API_URL ?? "";
+const API_URL =
+  process.env.NEXT_PUBLIC_ARIA_API_URL ??
+  "https://agient-aria-health-conection.onrender.com";
 
 const FEATURES = [
   {
