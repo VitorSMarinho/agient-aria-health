@@ -14,7 +14,7 @@
 
 ## 🌐 Demo Online
 
-🔗 https://clinical-wisdom-web.lovable.app
+🔗 https://agient-aria-health.vercel.app
 
 > Ambiente demonstrativo do projeto ARIA utilizando arquitetura Medallion, agentes autônomos de IA e disponibilização de dados em tempo real.
 
