@@ -6,9 +6,11 @@
 ![Databricks](https://img.shields.io/badge/Databricks-Data%20Engineering-orange)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
-![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E)
-![LangChain](https://img.shields.io/badge/LangChain-AI-black)
+![Supabase](https://img.shields.io/badge/Supabase-pgvector-3ECF8E)
+![LangChain](https://img.shields.io/badge/LangChain-Tool%20Calling-black)
 ![Groq](https://img.shields.io/badge/Groq-LLM-purple)
+![RAG](https://img.shields.io/badge/RAG-fastembed-informational)
+![Evals](https://img.shields.io/badge/Evals-DeepEval%20style-critical)
 
 ---
 
@@ -70,10 +72,10 @@ O ARIA utiliza uma arquitetura moderna baseada em Data Lakehouse, arquitetura Me
 2. Processamento no Databricks utilizando arquitetura Medallion
 3. Transformações e validações com Python e PySpark
 4. Consolidação da camada Gold
-5. Disponibilização via Supabase/PostgreSQL
-6. Consumo de dados via FastAPI
-7. Integração com agentes autônomos de IA
-8. Geração de insights clínicos, operacionais e estratégicos
+5. Disponibilização via Supabase/PostgreSQL (KPIs) + Supabase pgvector (base de conhecimento)
+6. Consumo de dados e RAG via FastAPI
+7. Agente decide, por pergunta, quais tools chamar (KPI e/ou busca semântica)
+8. Geração de insights clínicos, operacionais e estratégicos, com resposta rastreada (tokens/latência/custo)
 9. Consumo via dashboards e aplicações web
 
 > 💡 Projeto desenvolvido utilizando tecnologias gratuitas e open-source, demonstrando como pequenas equipes podem construir soluções enterprise escaláveis utilizando Engenharia de Dados + IA Generativa.
@@ -145,16 +147,41 @@ O ARIA é composto por agentes especializados com responsabilidades específicas
 
 ---
 
+## 🧠 Camada de AI Engineering
+
+A partir da v2.0, o ARIA deixou de ser um LLM com dados colados no prompt e
+passou a seguir o pipeline padrão de um agente de produção — mapeado direto
+no [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer):
+
+| Etapa do roadmap | Implementação no ARIA |
+|---|---|
+| **LLM APIs** | Groq (`openai/gpt-oss-120b`) via LangChain, com troca de modelo por env var |
+| **Embeddings** | `fastembed` local (ONNX, sem chave de API), modelo multilíngue PT-BR |
+| **Vector DB** | Supabase/pgvector em produção; store local em JSON pra dev/CI/eval |
+| **RAG** | chunking → embedding → retrieval semântico (`aria/retriever.py`) sobre protocolos/políticas internas |
+| **Function/Tool Calling** | o agente decide, por pergunta, se busca KPI (`buscar_kpis`) ou faz RAG (`buscar_protocolo_clinico`) — nada mais de prompt-stuffing |
+| **AI Agents** | 5 agentes especializados (`aria/agents.py`), cada um com system prompt, escopo e papel de acesso próprios, todos sobre o mesmo loop de tool-calling |
+| **Evaluation** | `eval/run_evals.py` — evals determinísticos (tool certa + keyword na resposta) + eval opcional baseado em modelo (LLM como juiz) |
+| **Observability** | `aria/observability.py` — traço de cada chamada (tokens, latência, custo estimado, tools usadas) em JSONL local e, opcionalmente, na tabela `agent_traces` do Supabase |
+| **AI Safety** | respostas sempre com disclaimer de suporte à decisão; dados fictícios; tools com enum fechado de tabelas (sem SQL livre) |
+
+> Setup: `python scripts/ingest_knowledge_base.py` popula a base de RAG,
+> `python eval/run_evals.py` roda a suíte de evals contra o agente real.
+
 ## 🛠️ Stack Tecnológica
 
 | Camada | Tecnologia | Função |
 |---|---|---|
 | Processamento | Databricks Community | Pipeline Medallion |
 | Linguagem | Python + PySpark | Transformações e engenharia |
-| IA Agents | LangChain + CrewAI | Orquestração de agentes |
-| LLM Runtime | Groq API + Claude API | Inferência e raciocínio |
-| API | FastAPI | Disponibilização de dados |
-| Banco de Dados | Supabase (PostgreSQL) | Camada Gold |
+| LLM Runtime | Groq API (`openai/gpt-oss-120b`) | Inferência e raciocínio |
+| Orquestração / Tool Calling | LangChain (`bind_tools`) | Function calling real, sem framework pesado |
+| Embeddings | fastembed (local, ONNX) | Vetorização multilíngue sem custo de API |
+| Vector DB | Supabase pgvector | Base de conhecimento (RAG) |
+| Evals | Suite própria (determinístico + LLM-as-judge) | Regressão e qualidade das respostas |
+| Observabilidade | JSONL + tabela `agent_traces` (Supabase) | Tokens, latência, custo, tools usadas |
+| API | FastAPI | Disponibilização de dados e agentes |
+| Banco de Dados | Supabase (PostgreSQL) | Camada Gold + Vector DB |
 | Deploy | Render.com | Hospedagem da API |
 | Versionamento | Git + GitHub | Controle de código |
 | IDE | VS Code | Desenvolvimento |
@@ -172,10 +199,16 @@ agient-aria-health/
 │   ├── silver/
 │   └── gold/
 │
-├── agents/
-├── supabase/
+├── aria/                  # núcleo de AI Engineering: LLM, RAG, tools, agentes, observabilidade
+├── knowledge_base/        # documentos fonte do RAG (protocolos/políticas fictícios)
+├── scripts/
+│   └── ingest_knowledge_base.py
+├── eval/                  # suíte de evals (determinístico + LLM-as-judge)
+├── agents/                # scripts de demonstração standalone
+├── supabase/              # SQL versionado (pgvector, RPCs, observabilidade)
 ├── docs/
-├── api/
+├── frontend/
+├── api.py
 ├── requirements.txt
 └── README.md
 ```
@@ -192,11 +225,15 @@ agient-aria-health/
 - [x] API FastAPI
 - [x] Deploy no Render
 - [x] Agente Clínico
-- [ ] Agente Financeiro
-- [ ] Agente Estratégico
-- [ ] Controle de acesso RBAC
+- [x] Agente Financeiro
+- [x] Agente Estratégico
+- [x] RAG com vector DB (Supabase pgvector + fallback local)
+- [x] Function/Tool calling real (sem prompt-stuffing)
+- [x] Suíte de evals (determinístico + LLM-as-judge)
+- [x] Observabilidade (tokens, latência, custo, tools usadas)
+- [ ] Controle de acesso RBAC (hoje o papel é só descritivo no prompt de cada agente)
 - [ ] Dashboard operacional
-- [ ] Observabilidade e monitoramento
+- [ ] MCP Server (expor KPIs/RAG do ARIA como ferramentas pro Claude Desktop/Code)
 
 ---
 

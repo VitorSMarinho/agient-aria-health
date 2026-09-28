@@ -15,6 +15,10 @@ venv/
 data/gold/
 *.csv
 
+# ARIA — artefatos locais de dev/eval (vector store e traces não vão pro repo)
+data/vector_store.json
+logs/
+
 # IDE
 .vscode/
 .idea/
