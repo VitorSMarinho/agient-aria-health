@@ -58,6 +58,11 @@ def buscar_kpis(tabela: str) -> dict:
 
 def buscar_protocolo_clinico(pergunta: str) -> dict:
     """Busca (RAG) em protocolos, políticas e manuais internos do Instituto Oncológico."""
+    if not CONFIG.rag_enabled:
+        return {
+            "contexto": "(base de conhecimento ainda não habilitada nesse ambiente)",
+            "fontes": [],
+        }
     try:
         chunks = retrieve(pergunta)
         return {"contexto": format_context(chunks), "fontes": [c.source for c in chunks]}
@@ -67,6 +72,23 @@ def buscar_protocolo_clinico(pergunta: str) -> dict:
             "fontes": [],
         }
 
+
+_RAG_TOOL_SCHEMA = {
+    "type": "function",
+    "function": {
+        "name": "buscar_protocolo_clinico",
+        "description": (
+            "Busca por similaridade semântica em protocolos, políticas de estoque e "
+            "manuais internos (fictícios) do Instituto Oncológico. Use quando a pergunta "
+            "pedir um procedimento, uma política ou uma recomendação, não apenas um número."
+        ),
+        "parameters": {
+            "type": "object",
+            "properties": {"pergunta": {"type": "string"}},
+            "required": ["pergunta"],
+        },
+    },
+}
 
 TOOL_SCHEMAS = [
     {
@@ -95,25 +117,18 @@ TOOL_SCHEMAS = [
             },
         },
     },
-    {
-        "type": "function",
-        "function": {
-            "name": "buscar_protocolo_clinico",
-            "description": (
-                "Busca por similaridade semântica em protocolos, políticas de estoque e "
-                "manuais internos (fictícios) do Instituto Oncológico. Use quando a pergunta "
-                "pedir um procedimento, uma política ou uma recomendação, não apenas um número."
-            ),
-            "parameters": {
-                "type": "object",
-                "properties": {"pergunta": {"type": "string"}},
-                "required": ["pergunta"],
-            },
-        },
-    },
 ]
 
 TOOL_IMPLEMENTATIONS = {
     "buscar_kpis": buscar_kpis,
-    "buscar_protocolo_clinico": buscar_protocolo_clinico,
 }
+
+# O RAG só entra na lista de tools do agente (e só existe pro LLM chamar) se
+# CONFIG.rag_enabled estiver ligado. Hoje começa desligado por padrão: carregar
+# o modelo de embeddings (fastembed/onnxruntime) travou o worker do Render no
+# plano free (memória insuficiente), derrubando o serviço inteiro a cada chamada.
+# Ligar via env var ARIA_RAG_ENABLED=true só depois de confirmar que o ambiente
+# aguenta o modelo (mais memória, ou trocar por embeddings via API em vez de local).
+if CONFIG.rag_enabled:
+    TOOL_SCHEMAS.append(_RAG_TOOL_SCHEMA)
+    TOOL_IMPLEMENTATIONS["buscar_protocolo_clinico"] = buscar_protocolo_clinico

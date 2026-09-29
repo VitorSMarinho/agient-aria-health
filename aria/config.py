@@ -18,6 +18,7 @@ class Config:
     max_tool_iterations: int
     top_k_retrieval: int
     traces_path: str
+    rag_enabled: bool
 
     @property
     def has_supabase(self) -> bool:
@@ -36,6 +37,7 @@ def load_config() -> Config:
         max_tool_iterations=int(os.getenv("ARIA_MAX_TOOL_ITERATIONS", "4")),
         top_k_retrieval=int(os.getenv("ARIA_TOP_K", "4")),
         traces_path=os.getenv("ARIA_TRACES_PATH", "logs/aria_traces.jsonl"),
+        rag_enabled=os.getenv("ARIA_RAG_ENABLED", "false").lower() == "true",
     )
 
 
