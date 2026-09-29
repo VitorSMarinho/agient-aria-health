@@ -2,11 +2,11 @@
 
 Sempre grava localmente em JSONL (funciona em qualquer ambiente, sem
 dependência externa). Se o Supabase estiver configurado, também grava na
-tabela agent_traces (ver supabase/01-knowledge-base-pgvector.sql) — assim dá
+tabela agent_traces (ver supabase/01-knowledge-base-pgvector.sql), assim dá
 pra consultar custo/latência em produção via SQL/dashboard.
 
 Preços aproximados do Groq para o modelo default (openai/gpt-oss-120b),
-usados só pra estimativa de custo em observabilidade — não é cobrança real.
+usados só pra estimativa de custo em observabilidade, não é cobrança real.
 """
 
 import json

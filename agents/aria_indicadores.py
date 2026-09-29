@@ -1,5 +1,5 @@
 # ==============================================
-# PROJETO ARIA — Agient
+# PROJETO ARIA: Agient
 # Agente: Indicadores de Atendimento
 # Descrição: Analisa KPIs operacionais do
 #            Instituto Oncológico
@@ -76,7 +76,7 @@ def agente_indicadores(pergunta: str) -> str:
 # Execucao do agente
 # ----------------------------------------------
 if __name__ == "__main__":
-    print("🤖 ARIA — Agente de Indicadores")
+    print("🤖 ARIA: Agente de Indicadores")
     print("=" * 50)
     
     perguntas = [

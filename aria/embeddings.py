@@ -1,4 +1,4 @@
-"""Camada de embeddings — modelo local via fastembed (ONNX, sem chave de API).
+"""Camada de embeddings: modelo local via fastembed (ONNX, sem chave de API).
 
 Multilíngue (PT-BR incluso) e leve o suficiente para rodar no free tier do Render,
 ao contrário de sentence-transformers (que traz PyTorch como dependência).

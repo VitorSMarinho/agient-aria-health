@@ -1,9 +1,9 @@
 # ==============================================
-# PROJETO ARIA — Agient
-# API: FastAPI — Backend dos Agentes
+# PROJETO ARIA: Agient
+# API: FastAPI, Backend dos Agentes
 # Descrição: Recebe perguntas do frontend e roteia
 #            pro agente ARIA certo (tool-calling real,
-#            RAG e observabilidade — ver pasta aria/)
+#            RAG e observabilidade, ver pasta aria/)
 # Autor: Vitor Marinho
 # ==============================================
 

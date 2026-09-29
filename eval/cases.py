@@ -1,4 +1,4 @@
-"""Casos de teste do ARIA — evals determinísticos + um eval baseado em modelo (opcional).
+"""Casos de teste do ARIA: evals determinísticos + um eval baseado em modelo (opcional).
 
 Cada caso descreve o que esperamos do agente para uma pergunta real:
 - expect_tool: a tool que deveria ter sido chamada (eval determinístico)

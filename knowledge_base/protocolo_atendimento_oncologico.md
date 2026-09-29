@@ -1,4 +1,4 @@
-# Protocolo Interno de Atendimento — Instituto Oncológico (fictício)
+# Protocolo Interno de Atendimento: Instituto Oncológico (fictício)
 
 > Documento interno fictício, criado para demonstrar a camada de RAG do ARIA.
 > Não representa orientação médica real.

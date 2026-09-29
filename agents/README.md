@@ -1,4 +1,4 @@
-# 🤖 Agentes ARIA — Agient
+# 🤖 Agentes ARIA: Agient
 
 ## O que é o ARIA?
 
@@ -10,12 +10,12 @@ pela **Agient** para transformar dados hospitalares em decisões estratégicas.
 ## Agentes disponíveis
 
 Todos os 5 agentes estão implementados em `aria/agents.py`, sobre o mesmo
-loop de tool-calling (`aria/agent.py`) — a diferença entre eles é o system
+loop de tool-calling (`aria/agent.py`), a diferença entre eles é o system
 prompt, o foco de análise e o papel de acesso pretendido.
 
 | Agente | Descrição | Papel de acesso |
 |---|---|---|
-| `indicadores` | Análise de KPIs operacionais | Gestão operacional — **demo pública** (default da API) |
+| `indicadores` | Análise de KPIs operacionais | Gestão operacional (**demo pública**, default da API) |
 | `clinico` | Resumo e evolução clínica do paciente | Médicos autorizados |
 | `financeiro` | Saúde financeira e anomalias | Diretoria e financeiro |
 | `estoque` | Controle de medicamentos e criticidade | Farmácia e suprimentos |
@@ -27,7 +27,7 @@ por usuário) está no roadmap do projeto, não implementado ainda.
 
 ---
 
-## 🟢 Teste ao vivo — Agente de Indicadores
+## 🟢 Teste ao vivo: Agente de Indicadores
 
 O agente de indicadores operacionais é o default da API pública. Acesse e
 faça sua pergunta:
@@ -51,7 +51,7 @@ Databricks Gold (Delta Lake)          Base de conhecimento (RAG)
         ↓                                      ↓
 Supabase (PostgreSQL)  ←──────────  Supabase (pgvector)
         ↓                                      ↓
-              FastAPI (Backend) — aria/agents.py
+              FastAPI (Backend): aria/agents.py
                         ↓
         Agente ARIA (LangChain tool-calling + Groq)
                         ↓
@@ -61,4 +61,4 @@ Supabase (PostgreSQL)  ←──────────  Supabase (pgvector)
 ---
 
 > *"Dados são a matéria-prima. Inteligência é o produto."*
-> — Agient
+> Agient

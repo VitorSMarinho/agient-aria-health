@@ -5,7 +5,7 @@ contém alguma das keywords esperadas?
 
 Eval baseado em modelo (--judge, opcional): usa o próprio LLM como juiz pra
 notar se a resposta está fundamentada nos dados retornados pelas tools
-(0 chamadas extra de LLM por padrão — só roda se pedido, porque custa tokens).
+(0 chamadas extra de LLM por padrão, só roda se pedido, porque custa tokens).
 
 Uso:
     python eval/run_evals.py
@@ -27,7 +27,7 @@ from aria.observability import record_trace
 
 def _normalize(text: str) -> str:
     # LLMs às vezes usam espaços tipográficos (ex: narrow no-break space antes
-    # de unidades, "48 horas") em vez de espaço comum — normaliza antes de comparar.
+    # de unidades, "48 horas") em vez de espaço comum. Normaliza antes de comparar.
     return re.sub(r"\s+", " ", text).lower()
 
 
@@ -61,7 +61,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if not os.getenv("GROQ_API_KEY"):
-        print("GROQ_API_KEY não configurada — não dá pra rodar os evals (precisam do LLM real).")
+        print("GROQ_API_KEY não configurada: não dá pra rodar os evals (precisam do LLM real).")
         sys.exit(1)
 
     results = []

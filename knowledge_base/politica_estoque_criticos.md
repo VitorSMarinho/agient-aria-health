@@ -1,4 +1,4 @@
-# Política de Estoque — Itens Críticos (fictício)
+# Política de Estoque: Itens Críticos (fictício)
 
 > Documento interno fictício, criado para demonstrar a camada de RAG do ARIA.
 
@@ -17,7 +17,7 @@ fornecedor alternativo.
 ## Itens vencendo
 
 Itens com validade em até 30 dias devem ser sinalizados para uso prioritário
-(FEFO — first expired, first out) antes de qualquer novo lote ser aberto.
+(FEFO, first expired, first out) antes de qualquer novo lote ser aberto.
 
 ## Reposição automática
 

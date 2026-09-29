@@ -1,4 +1,4 @@
-# 🧬 ARIA — Agente de Raciocínio e Inteligência em Análise Clínica
+# 🧬 ARIA: Agente de Raciocínio e Inteligência em Análise Clínica
 
 > Plataforma de inteligência de dados e agentes de IA aplicada à saúde oncológica.
 
@@ -26,7 +26,7 @@
 
 O **Projeto ARIA** é uma plataforma de inteligência de dados desenvolvida pela **Agient** para transformar a operação de centros oncológicos brasileiros através de Engenharia de Dados moderna, IA Generativa e arquitetura escalável.
 
-A maioria dos hospitais e clínicas no Brasil possui dados valiosos espalhados em planilhas, sistemas legados e arquivos isolados — sem estrutura, sem governança e sem inteligência operacional. O resultado: decisões lentas, desperdício de recursos e baixa capacidade analítica.
+A maioria dos hospitais e clínicas no Brasil possui dados valiosos espalhados em planilhas, sistemas legados e arquivos isolados, sem estrutura, sem governança e sem inteligência operacional. O resultado: decisões lentas, desperdício de recursos e baixa capacidade analítica.
 
 O ARIA resolve esse problema utilizando arquitetura Medallion, agentes especializados de IA e disponibilização inteligente de dados para transformar dados brutos em inteligência clínica, operacional e estratégica.
 
@@ -34,9 +34,9 @@ O projeto foi desenvolvido para demonstrar como pequenas equipes podem construir
 
 ---
 
-## 🏥 Contexto — Cliente Fictício
+## 🏥 Contexto: Cliente Fictício
 
-**Instituto Oncológico** — centro oncológico de médio porte com 3 unidades, 80 médicos e mais de 500 atendimentos/dia.
+**Instituto Oncológico**: centro oncológico de médio porte com 3 unidades, 80 médicos e mais de 500 atendimentos/dia.
 
 ### Desafios identificados
 
@@ -82,7 +82,7 @@ O ARIA utiliza uma arquitetura moderna baseada em Data Lakehouse, arquitetura Me
 
 ---
 
-## 🤖 Agentes ARIA — Skills e Controle de Acesso
+## 🤖 Agentes ARIA: Skills e Controle de Acesso
 
 O ARIA é composto por agentes especializados com responsabilidades específicas e controle de acesso baseado em perfil de usuário.
 
@@ -150,7 +150,7 @@ O ARIA é composto por agentes especializados com responsabilidades específicas
 ## 🧠 Camada de AI Engineering
 
 A partir da v2.0, o ARIA deixou de ser um LLM com dados colados no prompt e
-passou a seguir o pipeline padrão de um agente de produção — mapeado direto
+passou a seguir o pipeline padrão de um agente de produção, mapeado direto
 no [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer):
 
 | Etapa do roadmap | Implementação no ARIA |
@@ -159,10 +159,10 @@ no [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer):
 | **Embeddings** | `fastembed` local (ONNX, sem chave de API), modelo multilíngue PT-BR |
 | **Vector DB** | Supabase/pgvector em produção; store local em JSON pra dev/CI/eval |
 | **RAG** | chunking → embedding → retrieval semântico (`aria/retriever.py`) sobre protocolos/políticas internas |
-| **Function/Tool Calling** | o agente decide, por pergunta, se busca KPI (`buscar_kpis`) ou faz RAG (`buscar_protocolo_clinico`) — nada mais de prompt-stuffing |
+| **Function/Tool Calling** | o agente decide, por pergunta, se busca KPI (`buscar_kpis`) ou faz RAG (`buscar_protocolo_clinico`), sem mais prompt-stuffing |
 | **AI Agents** | 5 agentes especializados (`aria/agents.py`), cada um com system prompt, escopo e papel de acesso próprios, todos sobre o mesmo loop de tool-calling |
-| **Evaluation** | `eval/run_evals.py` — evals determinísticos (tool certa + keyword na resposta) + eval opcional baseado em modelo (LLM como juiz) |
-| **Observability** | `aria/observability.py` — traço de cada chamada (tokens, latência, custo estimado, tools usadas) em JSONL local e, opcionalmente, na tabela `agent_traces` do Supabase |
+| **Evaluation** | `eval/run_evals.py`: evals determinísticos (tool certa + keyword na resposta) + eval opcional baseado em modelo (LLM como juiz) |
+| **Observability** | `aria/observability.py`: traço de cada chamada (tokens, latência, custo estimado, tools usadas) em JSONL local e, opcionalmente, na tabela `agent_traces` do Supabase |
 | **AI Safety** | respostas sempre com disclaimer de suporte à decisão; dados fictícios; tools com enum fechado de tabelas (sem SQL livre) |
 
 > Setup: `python scripts/ingest_knowledge_base.py` popula a base de RAG,
@@ -239,7 +239,7 @@ agient-aria-health/
 
 ## 💡 Método ARIA
 
-O **ARIA** não é apenas um projeto — é um método replicável desenvolvido pela **Agient** para transformar dados em inteligência em diferentes setores.
+O **ARIA** não é apenas um projeto: é um método replicável desenvolvido pela **Agient** para transformar dados em inteligência em diferentes setores.
 
 ### Próximos setores
 
@@ -264,4 +264,4 @@ Engenheiro de Dados | AI Engineer | Fundador da Agient
 ---
 
 > *"Com as ferramentas certas e o problema certo, pequenas equipes mudam setores inteiros."*  
-> — Agient
+> Agient

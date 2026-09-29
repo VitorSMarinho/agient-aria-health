@@ -1,4 +1,4 @@
-"""Os 5 agentes especializados do ARIA — cada um com prompt, tools e papel de acesso próprios.
+"""Os 5 agentes especializados do ARIA, cada um com prompt, tools e papel de acesso próprios.
 
 Antes, esses 5 agentes existiam só como descrição no README (apenas
 `aria_indicadores` tinha código). Agora todos compartilham o mesmo loop de
@@ -12,7 +12,7 @@ from aria.agent import AgentResult, run_agent
 _BASE_PROMPT = (
     "Voce e o ARIA, sistema multi-agente de inteligencia de dados do Instituto "
     "Oncologico (cliente ficticio, usado como demonstracao tecnica da Agient). "
-    "Use as tools disponiveis para buscar dados reais antes de responder — nunca "
+    "Use as tools disponiveis para buscar dados reais antes de responder. Nunca "
     "invente numeros. Responda sempre em portugues brasileiro, de forma clara e "
     "objetiva, e aponte pontos de atencao quando relevante. "
     "Voce e suporte a decisao: nunca substitui julgamento clinico ou financeiro humano."

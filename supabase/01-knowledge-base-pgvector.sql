@@ -1,4 +1,4 @@
--- ARIA — Base de conhecimento vetorial (RAG) + tabela de observabilidade
+-- ARIA: Base de conhecimento vetorial (RAG) + tabela de observabilidade
 -- Rodar manualmente no SQL Editor do Supabase do projeto ARIA.
 -- Pré-requisito: extensão pgvector disponível (padrão nos projetos Supabase).
 

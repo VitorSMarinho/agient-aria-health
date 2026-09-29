@@ -1,4 +1,4 @@
-# Manual Financeiro — Gestão de Inadimplência (fictício)
+# Manual Financeiro: Gestão de Inadimplência (fictício)
 
 > Documento interno fictício, criado para demonstrar a camada de RAG do ARIA.
 

@@ -1,8 +1,8 @@
 """Tools reais que o agente ARIA pode chamar (function calling).
 
 Antes desta mudança, o /consultar enfiava todos os dados do Supabase dentro
-do prompt em toda chamada. Agora o LLM decide, por pergunta, qual dado buscar
-— reduz tokens, generaliza melhor e é o padrão real de "AI Agents" do roadmap.
+do prompt em toda chamada. Agora o LLM decide, por pergunta, qual dado buscar:
+reduz tokens, generaliza melhor e é o padrão real de "AI Agents" do roadmap.
 """
 
 import os
@@ -12,7 +12,7 @@ import requests
 from aria.config import CONFIG
 from aria.retriever import format_context, retrieve
 
-# Dado de demonstração — usado como fallback enquanto as tabelas gold_kpi_*
+# Dado de demonstração, usado como fallback enquanto as tabelas gold_kpi_*
 # do Supabase de produção não estiverem populadas (pendência conhecida do projeto).
 _DADOS_DEMO = {
     "gold_kpi_atendimentos": [
