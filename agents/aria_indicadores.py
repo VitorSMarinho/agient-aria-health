@@ -1,5 +1,5 @@
 # ==============================================
-# PROJETO ARIA — Agient
+# PROJETO ARIA: Agient
 # Agente: Indicadores de Atendimento
 # Descrição: Analisa KPIs operacionais do
 #            Instituto Oncológico
@@ -21,7 +21,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # Configuração do modelo
 # ----------------------------------------------
 llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
+    model="openai/gpt-oss-120b",
     api_key=GROQ_API_KEY,
     temperature=0.3
 )
@@ -76,7 +76,7 @@ def agente_indicadores(pergunta: str) -> str:
 # Execucao do agente
 # ----------------------------------------------
 if __name__ == "__main__":
-    print("🤖 ARIA — Agente de Indicadores")
+    print("🤖 ARIA: Agente de Indicadores")
     print("=" * 50)
     
     perguntas = [

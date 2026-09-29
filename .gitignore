@@ -1,4 +1,4 @@
-# Variáveis de ambiente — NUNCA subir
+# Variáveis de ambiente: NUNCA subir
 .env
 .env.local
 .env.production
@@ -14,6 +14,10 @@ venv/
 # Dados sensíveis
 data/gold/
 *.csv
+
+# ARIA: artefatos locais de dev/eval (vector store e traces não vão pro repo)
+data/vector_store.json
+logs/
 
 # IDE
 .vscode/
