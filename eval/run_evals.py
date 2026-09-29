@@ -19,6 +19,11 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+# A suite cobre a tool de RAG, que em produção vem desligada por padrão
+# (ver aria/config.py). Local/CI tem memória de sobra pro fastembed, então
+# liga aqui antes de qualquer import de aria.*, que já carrega o CONFIG.
+os.environ.setdefault("ARIA_RAG_ENABLED", "true")
+
 from eval.cases import CASES, EvalCase
 
 from aria.agents import ask

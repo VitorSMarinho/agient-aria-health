@@ -158,7 +158,7 @@ no [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer):
 | **LLM APIs** | Groq (`openai/gpt-oss-120b`) via LangChain, com troca de modelo por env var |
 | **Embeddings** | `fastembed` local (ONNX, sem chave de API), modelo multilíngue PT-BR |
 | **Vector DB** | Supabase/pgvector em produção; store local em JSON pra dev/CI/eval |
-| **RAG** | chunking → embedding → retrieval semântico (`aria/retriever.py`) sobre protocolos/políticas internas |
+| **RAG** | chunking → embedding → retrieval semântico (`aria/retriever.py`) sobre protocolos/políticas internas. Testado e funcional; desligado por padrão em produção via `ARIA_RAG_ENABLED` (o modelo local de embeddings excedeu a memória do plano free do Render, derrubando o serviço) |
 | **Function/Tool Calling** | o agente decide, por pergunta, se busca KPI (`buscar_kpis`) ou faz RAG (`buscar_protocolo_clinico`), sem mais prompt-stuffing |
 | **AI Agents** | 5 agentes especializados (`aria/agents.py`), cada um com system prompt, escopo e papel de acesso próprios, todos sobre o mesmo loop de tool-calling |
 | **Evaluation** | `eval/run_evals.py`: evals determinísticos (tool certa + keyword na resposta) + eval opcional baseado em modelo (LLM como juiz) |
@@ -227,10 +227,11 @@ agient-aria-health/
 - [x] Agente Clínico
 - [x] Agente Financeiro
 - [x] Agente Estratégico
-- [x] RAG com vector DB (Supabase pgvector + fallback local)
+- [x] RAG com vector DB (Supabase pgvector + fallback local), desligado por padrão em produção (ver `ARIA_RAG_ENABLED`)
 - [x] Function/Tool calling real (sem prompt-stuffing)
 - [x] Suíte de evals (determinístico + LLM-as-judge)
 - [x] Observabilidade (tokens, latência, custo, tools usadas)
+- [ ] Habilitar RAG em produção de verdade (upgrade de plano no Render ou trocar embeddings local por uma API, pra não estourar memória)
 - [ ] Controle de acesso RBAC (hoje o papel é só descritivo no prompt de cada agente)
 - [ ] Dashboard operacional
 - [ ] MCP Server (expor KPIs/RAG do ARIA como ferramentas pro Claude Desktop/Code)
