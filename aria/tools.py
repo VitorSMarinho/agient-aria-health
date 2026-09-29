@@ -58,8 +58,14 @@ def buscar_kpis(tabela: str) -> dict:
 
 def buscar_protocolo_clinico(pergunta: str) -> dict:
     """Busca (RAG) em protocolos, políticas e manuais internos do Instituto Oncológico."""
-    chunks = retrieve(pergunta)
-    return {"contexto": format_context(chunks), "fontes": [c.source for c in chunks]}
+    try:
+        chunks = retrieve(pergunta)
+        return {"contexto": format_context(chunks), "fontes": [c.source for c in chunks]}
+    except requests.RequestException:
+        return {
+            "contexto": "(base de conhecimento indisponível no momento)",
+            "fontes": [],
+        }
 
 
 TOOL_SCHEMAS = [
