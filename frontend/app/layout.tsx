@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ARIA — Agente de Raciocínio e Inteligência em Análise Clínica",
+  title: "ARIA · Agente de Raciocínio e Inteligência em Análise Clínica",
   description:
-    "ARIA é o agente de IA da Agient que transforma dados clínicos, de estoque e financeiros em decisões, integrando Databricks, Supabase e LLMs em tempo real.",
+    "ARIA transforma dados clínicos, de estoque e financeiros em decisões, integrando Databricks, Supabase e LLMs. Projeto de portfólio de Vitor Marinho com dados fictícios. Disponível em português e inglês.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
