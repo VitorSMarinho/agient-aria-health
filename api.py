@@ -11,7 +11,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from aria.agents import AGENT_PROFILES, DEFAULT_AGENT, ask
+from aria.agents import AGENT_PROFILES, DEFAULT_AGENT, DEFAULT_LANGUAGE, ask
 from aria.observability import record_trace
 
 app = FastAPI(
@@ -31,6 +31,13 @@ app.add_middleware(
 class Pergunta(BaseModel):
     pergunta: str
     agente: str = DEFAULT_AGENT
+    idioma: str = DEFAULT_LANGUAGE
+
+
+DISCLAIMERS = {
+    "pt": "O ARIA e um suporte a decisao baseado em dados. Nao substitui o julgamento clinico medico.",
+    "en": "ARIA is a data-driven decision support tool. It does not replace medical clinical judgment.",
+}
 
 
 @app.get("/")
@@ -48,7 +55,7 @@ def listar_agentes():
 
 @app.post("/consultar")
 def consultar_aria(body: Pergunta):
-    profile, result = ask(body.agente, body.pergunta)
+    profile, result = ask(body.agente, body.pergunta, body.idioma)
     record_trace(profile.slug, body.pergunta, result)
 
     return {
@@ -57,5 +64,5 @@ def consultar_aria(body: Pergunta):
         "agente": profile.nome,
         "tools_utilizadas": [tc.name for tc in result.tool_calls],
         "latencia_ms": result.latency_ms,
-        "disclaimer": "O ARIA e um suporte a decisao baseado em dados. Nao substitui o julgamento clinico medico.",
+        "disclaimer": DISCLAIMERS.get(body.idioma, DISCLAIMERS[DEFAULT_LANGUAGE]),
     }

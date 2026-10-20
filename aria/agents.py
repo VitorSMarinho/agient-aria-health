@@ -11,10 +11,10 @@ from aria.agent import AgentResult, run_agent
 
 _BASE_PROMPT = (
     "Voce e o ARIA, sistema multi-agente de inteligencia de dados do Instituto "
-    "Oncologico (cliente ficticio, usado como demonstracao tecnica da Agient). "
+    "Oncologico (cliente ficticio, usado como demonstracao tecnica). "
     "Use as tools disponiveis para buscar dados reais antes de responder. Nunca "
-    "invente numeros. Responda sempre em portugues brasileiro, de forma clara e "
-    "objetiva, e aponte pontos de atencao quando relevante. "
+    "invente numeros. Responda de forma clara e objetiva, e aponte pontos de "
+    "atencao quando relevante. "
     "Voce e suporte a decisao: nunca substitui julgamento clinico ou financeiro humano."
 )
 
@@ -77,15 +77,28 @@ AGENT_PROFILES: dict[str, AgentProfile] = {
 
 DEFAULT_AGENT = "indicadores"
 
+# Idioma da resposta escolhido no frontend; os dados e as tools seguem em portugues.
+LANGUAGE_INSTRUCTIONS = {
+    "pt": "Responda sempre em portugues brasileiro.",
+    "en": (
+        "Always answer in English, even though the data, table names and "
+        "internal documents are in Portuguese."
+    ),
+}
+DEFAULT_LANGUAGE = "pt"
 
-def _system_prompt(profile: AgentProfile) -> str:
+
+def _system_prompt(profile: AgentProfile, language: str = DEFAULT_LANGUAGE) -> str:
+    instruction = LANGUAGE_INSTRUCTIONS.get(language, LANGUAGE_INSTRUCTIONS[DEFAULT_LANGUAGE])
     return (
-        f"{_BASE_PROMPT}\n\nVoce e especificamente o {profile.nome} "
+        f"{_BASE_PROMPT} {instruction}\n\nVoce e especificamente o {profile.nome} "
         f"(acesso: {profile.acesso}). Seu foco: {profile.foco}"
     )
 
 
-def ask(agent_slug: str, question: str) -> tuple[AgentProfile, AgentResult]:
+def ask(
+    agent_slug: str, question: str, language: str = DEFAULT_LANGUAGE
+) -> tuple[AgentProfile, AgentResult]:
     profile = AGENT_PROFILES.get(agent_slug, AGENT_PROFILES[DEFAULT_AGENT])
-    result = run_agent(_system_prompt(profile), question)
+    result = run_agent(_system_prompt(profile, language), question)
     return profile, result
