@@ -1,5 +1,5 @@
 # ==============================================
-# PROJETO ARIA: Agient
+# PROJETO ARIA
 # Agente: Indicadores de Atendimento
 # Descrição: Analisa KPIs operacionais do
 #            Instituto Oncológico
@@ -62,7 +62,7 @@ FINANCEIRO:
 def agente_indicadores(pergunta: str) -> str:
     mensagens = [
         SystemMessage(content="Voce e o ARIA, agente de inteligencia "
-        "do Instituto Oncologico desenvolvido pela Agient. "
+        "do Instituto Oncologico. "
         "Analise os indicadores fornecidos e responda de forma clara e objetiva. "
         "Sempre aponte pontos de atencao e sugira melhorias quando relevante. "
         "Responda sempre em portugues brasileiro."),

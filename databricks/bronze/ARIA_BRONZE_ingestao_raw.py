@@ -1,5 +1,5 @@
 # ==============================================
-# PROJETO ARIA — Agient
+# PROJETO ARIA
 # Camada: BRONZE | Ingestão Raw
 # Descrição: Ingestão dos CSVs do GitHub
 #            para a camada raw do Delta Lake
@@ -9,7 +9,7 @@
 import pandas as pd
 
 # URLs dos CSVs no GitHub (raw)
-BASE_URL = "https://raw.githubusercontent.com/VitorSMarinho/agient-aria-health/main/data/raw"
+BASE_URL = "https://raw.githubusercontent.com/VitorSMarinho/aria-health-vm/main/data/raw"
 
 arquivos = {
     "pacientes"             : f"{BASE_URL}/pacientes.csv",

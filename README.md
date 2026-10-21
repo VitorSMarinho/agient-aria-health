@@ -16,7 +16,7 @@
 
 ## 🌐 Demo Online
 
-🔗 https://agient-aria-health.vercel.app
+🔗 https://aria-health-vm.vercel.app
 
 > Ambiente demonstrativo do projeto ARIA utilizando arquitetura Medallion, agentes autônomos de IA e disponibilização de dados em tempo real.
 
@@ -24,7 +24,7 @@
 
 ## 🎯 Sobre o Projeto
 
-O **Projeto ARIA** é uma plataforma de inteligência de dados desenvolvida pela **Agient** para transformar a operação de centros oncológicos brasileiros através de Engenharia de Dados moderna, IA Generativa e arquitetura escalável.
+O **Projeto ARIA** é uma plataforma de inteligência de dados desenvolvida por **Vitor Marinho** para transformar a operação de centros oncológicos brasileiros através de Engenharia de Dados moderna, IA Generativa e arquitetura escalável.
 
 A maioria dos hospitais e clínicas no Brasil possui dados valiosos espalhados em planilhas, sistemas legados e arquivos isolados, sem estrutura, sem governança e sem inteligência operacional. O resultado: decisões lentas, desperdício de recursos e baixa capacidade analítica.
 
@@ -191,7 +191,7 @@ no [roadmap.sh/ai-engineer](https://roadmap.sh/ai-engineer):
 ## 📁 Estrutura do Repositório
 
 ```bash
-agient-aria-health/
+aria-health-vm/
 │
 ├── data/
 ├── databricks/
@@ -240,7 +240,7 @@ agient-aria-health/
 
 ## 💡 Método ARIA
 
-O **ARIA** não é apenas um projeto: é um método replicável desenvolvido pela **Agient** para transformar dados em inteligência em diferentes setores.
+O **ARIA** não é apenas um projeto: é um método replicável desenvolvido por **Vitor Marinho** para transformar dados em inteligência em diferentes setores.
 
 ### Próximos setores
 
@@ -254,7 +254,7 @@ O **ARIA** não é apenas um projeto: é um método replicável desenvolvido pel
 ## 👨‍💻 Autor
 
 **Vitor Marinho**  
-Engenheiro de Dados | AI Engineer | Fundador da Agient
+Engenheiro de Dados | AI Engineer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Vitor%20Marinho-blue)](https://www.linkedin.com/in/vitor-marinho/)
 [![GitHub](https://img.shields.io/badge/GitHub-VitorSMarinho-black)](https://github.com/VitorSMarinho)
@@ -265,4 +265,4 @@ Engenheiro de Dados | AI Engineer | Fundador da Agient
 ---
 
 > *"Com as ferramentas certas e o problema certo, pequenas equipes mudam setores inteiros."*  
-> Agient
+> Vitor Marinho
