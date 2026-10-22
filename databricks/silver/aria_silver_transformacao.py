@@ -1,5 +1,5 @@
 # ==============================================
-# PROJETO ARIA — Agient
+# PROJETO ARIA
 # Camada: SILVER | Transformação e Limpeza
 # Descrição: Padronização, tratamento de nulos
 #            e validação dos dados Bronze

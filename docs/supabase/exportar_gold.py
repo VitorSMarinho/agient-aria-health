@@ -1,5 +1,5 @@
 # ==============================================
-# PROJETO ARIA — Agient
+# PROJETO ARIA
 # Exportação: Gold → Supabase
 # Autor: Vitor Marinho
 # ==============================================

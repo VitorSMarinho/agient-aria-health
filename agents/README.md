@@ -1,9 +1,9 @@
-# 🤖 Agentes ARIA: Agient
+# 🤖 Agentes ARIA
 
 ## O que é o ARIA?
 
 O ARIA é um sistema multi-agent de inteligência clínica desenvolvido 
-pela **Agient** para transformar dados hospitalares em decisões estratégicas.
+por **Vitor Marinho** para transformar dados hospitalares em decisões estratégicas.
 
 ---
 
@@ -32,7 +32,7 @@ por usuário) está no roadmap do projeto, não implementado ainda.
 O agente de indicadores operacionais é o default da API pública. Acesse e
 faça sua pergunta:
 
-👉 **[Acessar demo do ARIA](https://agient-aria-health.vercel.app)**
+👉 **[Acessar demo do ARIA](https://aria-health-vm.vercel.app)**
 
 Pra testar qualquer um dos 5 agentes, chame a API diretamente:
 
@@ -61,4 +61,4 @@ Supabase (PostgreSQL)  ←──────────  Supabase (pgvector)
 ---
 
 > *"Dados são a matéria-prima. Inteligência é o produto."*
-> Agient
+> Vitor Marinho

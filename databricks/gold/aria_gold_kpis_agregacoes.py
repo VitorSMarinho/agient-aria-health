@@ -1,5 +1,5 @@
 # ==============================================
-# PROJETO ARIA — Agient
+# PROJETO ARIA
 # Camada: GOLD | KPIs e Agregações
 # Descrição: Dados agregados e prontos para
 #            consumo pelos agentes e DataViz

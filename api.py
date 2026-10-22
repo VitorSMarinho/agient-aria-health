@@ -1,5 +1,5 @@
 # ==============================================
-# PROJETO ARIA: Agient
+# PROJETO ARIA
 # API: FastAPI, Backend dos Agentes
 # Descrição: Recebe perguntas do frontend e roteia
 #            pro agente ARIA certo (tool-calling real,
